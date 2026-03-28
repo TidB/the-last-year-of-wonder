@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cj8ae7wctn5lh"]
+
+[node name="Level4Trainplatforms" type="Node3D" unique_id=1589141337]
+
+[node name="7-8" type="CSGBox3D" parent="." unique_id=1609662890]
+size = Vector3(11, 1, 182)
+
+[node name="5-6" type="CSGBox3D" parent="." unique_id=1151461290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.94852, 0, 0)
+size = Vector3(11, 1, 430)

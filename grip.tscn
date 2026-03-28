@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bgp867o7lb6u1"]
+
+[ext_resource type="Material" uid="uid://b6skds75qjnku" path="res://materials/stainless-steel.tres" id="1_6oumc"]
+
+[node name="Grip" type="Node3D" unique_id=1103308484]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=2058956111]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+radius = 0.05
+height = 1.7
+material = ExtResource("1_6oumc")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=313488110]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, -0.0905522, 0, 0.80098605)
+radius = 0.05
+height = 0.15
+material = ExtResource("1_6oumc")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="." unique_id=1994819865]
+transform = Transform3D(-4.371139e-08, 1, 4.371139e-08, 0, -4.371139e-08, 1, 1, 4.371139e-08, 1.9106855e-15, -0.0905522, 0, -0.8034405)
+radius = 0.05
+height = 0.15
+material = ExtResource("1_6oumc")

@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://ctm8ks4pkvnh5"]
+
+[ext_resource type="PackedScene" uid="uid://fhg6ra3bpmds" path="res://pillar.tscn" id="1_7rlpm"]
+[ext_resource type="Material" uid="uid://cd17hub2b3v26" path="res://materials/orange.tres" id="2_eyg38"]
+[ext_resource type="PackedScene" uid="uid://b2vpgqne08gy6" path="res://person.tscn" id="3_vhg5u"]
+[ext_resource type="PackedScene" uid="uid://bgp867o7lb6u1" path="res://grip.tscn" id="4_5avpp"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_7rlpm"]
+left_to_right = 0.0
+size = Vector3(16.155, 9, 7.74)
+
+[sub_resource type="PrismMesh" id="PrismMesh_eyg38"]
+left_to_right = 0.0
+size = Vector3(25, 15, 7.74)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rlpm"]
+albedo_color = Color(0.21029852, 0.41796875, 0.15460409, 1)
+
+[node name="Level0Platform" type="Node3D" unique_id=639441976]
+
+[node name="floor" type="CSGBox3D" parent="." unique_id=1635610460]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 26.156424)
+use_collision = true
+size = Vector3(15, 0.5, 120)
+
+[node name="Pillar" parent="." unique_id=399265933 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 0)
+
+[node name="Pillar2" parent="." unique_id=2024036052 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 0)
+
+[node name="Pillar3" parent="." unique_id=1778960044 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, -6)
+
+[node name="Pillar4" parent="." unique_id=1025069392 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, -6)
+
+[node name="Pillar5" parent="." unique_id=1207028425 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, -12.066032)
+
+[node name="Pillar6" parent="." unique_id=1270784826 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, -12.066032)
+
+[node name="Pillar7" parent="." unique_id=2013120956 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, -18.066032)
+
+[node name="Pillar8" parent="." unique_id=262116649 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, -18.066032)
+
+[node name="Pillar9" parent="." unique_id=6137548 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 24.004175)
+
+[node name="Pillar10" parent="." unique_id=93074184 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 24.004175)
+
+[node name="Pillar17" parent="." unique_id=567296816 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 30)
+
+[node name="Pillar18" parent="." unique_id=452932707 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 30)
+
+[node name="Pillar19" parent="." unique_id=2029485919 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 65.546684)
+
+[node name="Pillar20" parent="." unique_id=740073223 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 65.546684)
+
+[node name="Pillar21" parent="." unique_id=1422356709 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 71.546684)
+
+[node name="Pillar22" parent="." unique_id=1994617889 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 71.546684)
+
+[node name="Pillar23" parent="." unique_id=568825253 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 77.546684)
+
+[node name="Pillar24" parent="." unique_id=1881510399 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 77.546684)
+
+[node name="Wall" parent="." unique_id=1714462566 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 20, 4.5, 1.5, 48.950424)
+
+[node name="Wall2" parent="." unique_id=1228135014 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 20, -4.5, 1.5, 48.976826)
+
+[node name="Pillar11" parent="." unique_id=1014438034 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 18.004175)
+
+[node name="Pillar12" parent="." unique_id=1340855107 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 18.004175)
+
+[node name="Pillar13" parent="." unique_id=1375663047 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 11.938143)
+
+[node name="Pillar14" parent="." unique_id=1036881275 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 11.938143)
+
+[node name="Pillar15" parent="." unique_id=1530655013 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 5.938143)
+
+[node name="Pillar16" parent="." unique_id=82952815 instance=ExtResource("1_7rlpm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 5.938143)
+
+[node name="StairsToLevel1" type="CSGMesh3D" parent="." unique_id=758792135]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 4.4054613, 42.858078)
+mesh = SubResource("PrismMesh_7rlpm")
+
+[node name="StairsToLevel1-2" type="CSGMesh3D" parent="." unique_id=382819609]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2118764, 4.64063, 89.81221)
+mesh = SubResource("PrismMesh_7rlpm")
+
+[node name="StairsToLevel1-3" type="CSGMesh3D" parent="." unique_id=414038268]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1444764, 7.5534973, 94.374176)
+mesh = SubResource("PrismMesh_eyg38")
+
+[node name="elevator" type="CSGBox3D" parent="." unique_id=886179992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6912556, 7.425415, 84.96825)
+size = Vector3(4, 15, 4)
+material = SubResource("StandardMaterial3D_7rlpm")
+
+[node name="level1" type="Node3D" parent="." unique_id=1312000779]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 66.524)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="level1" unique_id=1661032181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.946665, -0.5, 36.411736)
+size = Vector3(15, 1, 10)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="level1" unique_id=932329012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8996797, 2.477188, 41.55558)
+size = Vector3(15, 5, 1)
+material = ExtResource("2_eyg38")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="level1" unique_id=1266388263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1484923, 0.78780174, 16.230354)
+size = Vector3(7.5, 1.5, 1)
+material = ExtResource("2_eyg38")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="level1" unique_id=728682922]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.0717616, 2.477188, 38.88598)
+size = Vector3(15, 5, 1)
+material = ExtResource("2_eyg38")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="level1" unique_id=913657002]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.546592, -1.1607599, 23.626503)
+size = Vector3(15, 15, 1)
+material = ExtResource("2_eyg38")
+
+[node name="Person" parent="." unique_id=103864501 instance=ExtResource("3_vhg5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.526911, 0.86, 41.024345)
+
+[node name="Grip" parent="." unique_id=1103308484 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 39.994747)
+
+[node name="Grip2" parent="." unique_id=581688332 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 41.78122)
+
+[node name="Grip3" parent="." unique_id=1309785122 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 43.546223)
+
+[node name="Grip4" parent="." unique_id=1957104855 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 45.332695)
+
+[node name="Grip5" parent="." unique_id=1780734457 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 47.134815)
+
+[node name="Grip6" parent="." unique_id=99659888 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 48.921288)
+
+[node name="Grip7" parent="." unique_id=978015183 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 50.68629)
+
+[node name="Grip8" parent="." unique_id=206717789 instance=ExtResource("4_5avpp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 52.472763)
