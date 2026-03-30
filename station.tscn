@@ -1,11 +1,24 @@
 [gd_scene format=3 uid="uid://dutkpexykwxxj"]
 
 [ext_resource type="PackedScene" uid="uid://ctm8ks4pkvnh5" path="res://level0_metro.tscn" id="1_lu35c"]
-[ext_resource type="PackedScene" uid="uid://qw3byqwkj1i" path="res://level3_trainstation.tscn" id="2_xmj61"]
+[ext_resource type="Material" uid="uid://cd17hub2b3v26" path="res://materials/orange.tres" id="3_oblqs"]
 [ext_resource type="PackedScene" uid="uid://b2vpgqne08gy6" path="res://person.tscn" id="3_sum1q"]
+[ext_resource type="PackedScene" uid="uid://cj8ae7wctn5lh" path="res://level4_trainplatforms.tscn" id="4_oblqs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xmj61"]
 albedo_color = Color(0.23828125, 0.23828125, 0.23828125, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_sum1q"]
+left_to_right = 0.0
+size = Vector3(16.155, 9, 15)
+
+[sub_resource type="PrismMesh" id="PrismMesh_oblqs"]
+left_to_right = 0.0
+size = Vector3(20, 12, 15)
+
+[sub_resource type="PrismMesh" id="PrismMesh_ytu38"]
+left_to_right = 0.0
+size = Vector3(1, 1, 10)
 
 [node name="Station" type="Node3D" unique_id=846187049]
 
@@ -17,34 +30,159 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.461174, 1.1920929e-07, -0
 [node name="Level0Platform2" parent="level0" unique_id=1167888450 instance=ExtResource("1_lu35c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.969069, 0.01643002, -0.0020554066)
 
-[node name="Level3Trainstation" parent="." unique_id=1767414041 instance=ExtResource("2_xmj61")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0)
-
 [node name="level1" type="Node3D" parent="." unique_id=783055461]
 
 [node name="tracks" type="CSGBox3D" parent="level1" unique_id=663572096]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5611296, 67.13004)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5611296, 89.65762)
 size = Vector3(70, 1, 8)
 material = SubResource("StandardMaterial3D_xmj61")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="level1" unique_id=1951627157]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0463128, 8.498571, 86.239784)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0463128, 8.498571, 113.79224)
 size = Vector3(7, 1, 22)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="level1" unique_id=1067520036]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0678451, 8.498571, 76.641655)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0678451, 8.498571, 99.169235)
 size = Vector3(11, 1, 70)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="level1" unique_id=961929563]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0678451, 8.498571, 57.39865)
-size = Vector3(13, 1, 100)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0678451, 8.498571, 68.201775)
+size = Vector3(35, 1, 100)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="level1" unique_id=1770270085]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.368677, 8.498571, 86.239784)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.368677, 8.498571, 113.79224)
 size = Vector3(7, 1, 22)
+
+[node name="StairsToLevel2" type="CSGMesh3D" parent="level1" unique_id=1701030249]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.7727574, 13.509861, 69.08742)
+mesh = SubResource("PrismMesh_sum1q")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="level1/StairsToLevel2" unique_id=1175773730]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 1.0717621, -1.0777645, 7.9150476)
+size = Vector3(15, 10, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="level1/StairsToLevel2" unique_id=1369036665]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 1.0717621, -1.0777645, -7.9043045)
+size = Vector3(15, 10, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="level1" unique_id=1642874647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1621537, 11.452107, 50.64422)
+size = Vector3(23, 5, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="level1" unique_id=1702714131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.175423, 11.452107, 50.64422)
+size = Vector3(20, 5, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="level1" unique_id=1937803182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.73706, 11.452107, 50.64422)
+size = Vector3(20, 5, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="level1" unique_id=1050493980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.598738, 12.408453, 73.2831)
+radius = 1.0
+height = 7.0
+sides = 16
+material = ExtResource("3_oblqs")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="level1" unique_id=918578325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.598738, 12.408453, 60.157417)
+radius = 1.0
+height = 7.0
+sides = 16
+material = ExtResource("3_oblqs")
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="level1" unique_id=1528855034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.38091, 12.408453, 73.2831)
+radius = 1.0
+height = 7.0
+sides = 16
+material = ExtResource("3_oblqs")
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="level1" unique_id=290953967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.38091, 12.408453, 60.157417)
+radius = 1.0
+height = 7.0
+sides = 16
+material = ExtResource("3_oblqs")
+
+[node name="graffiti" type="CSGBox3D" parent="level1" unique_id=335130512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7924702, 20.95274, 61.923607)
+size = Vector3(16, 7, 1)
 
 [node name="Person" parent="." unique_id=103864501 instance=ExtResource("3_sum1q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.052404, 0.85999954, 32.020645)
 
 [node name="Person2" parent="." unique_id=1261639182 instance=ExtResource("3_sum1q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.912138, 0.8599993, 7.346205)
+
+[node name="level2" type="Node3D" parent="." unique_id=1033089328]
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="level2" unique_id=1558901079]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0678451, 17.532017, 127.21131)
+size = Vector3(100, 1, 150)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="level2" unique_id=1862815437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7485871, 21.418348, 83.29585)
+size = Vector3(1, 7, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="level2" unique_id=1380552553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.874884, 21.418348, 86.96736)
+size = Vector3(1, 7, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="level2" unique_id=507684301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.103899, 21.418348, 83.29585)
+size = Vector3(1, 7, 1)
+material = ExtResource("3_oblqs")
+
+[node name="Person3" parent="level2" unique_id=1066472665 instance=ExtResource("3_sum1q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0559952, 19.129526, 89.63722)
+
+[node name="StairsToLevel3" type="CSGMesh3D" parent="level2" unique_id=1590785243]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 14.886695, 24.032331, 67.23115)
+mesh = SubResource("PrismMesh_oblqs")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="level2/StairsToLevel3" unique_id=195045627]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 1.0717621, -1.0777645, 7.9150476)
+size = Vector3(15, 10, 1)
+material = ExtResource("3_oblqs")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="level2/StairsToLevel3" unique_id=1551925632]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, 1.0717621, -1.0777645, -7.9043045)
+size = Vector3(15, 10, 1)
+material = ExtResource("3_oblqs")
+
+[node name="Level3Trainstation" type="Node3D" parent="." unique_id=1767414041]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.383704, 33.318527, 61.021442)
+
+[node name="SmolRoof" type="CSGBox3D" parent="Level3Trainstation" unique_id=396070797]
+size = Vector3(17, 0.2, 5.4)
+
+[node name="MainEntranceRoof" type="CSGBox3D" parent="Level3Trainstation" unique_id=900563601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5084844, 12.707734)
+size = Vector3(45.56, 1, 20)
+
+[node name="MainStairsToLevel2" type="CSGMesh3D" parent="Level3Trainstation" unique_id=391014769]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -3.8464918, 3.297023)
+mesh = SubResource("PrismMesh_ytu38")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level3Trainstation" unique_id=1985571647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.2764845, -3.8163738, 78.888725)
+size = Vector3(15, 1, 150)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Level3Trainstation" unique_id=304806074]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.276471, -3.8163738, 223.56288)
+size = Vector3(75, 1, 150)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level3Trainstation" unique_id=828002643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.530999, 7, 151.53491)
+size = Vector3(43, 10, 28)
+
+[node name="Level4Trainplatforms" parent="." unique_id=1589141337 instance=ExtResource("4_oblqs")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9590759, 36.501484, -47.278584)

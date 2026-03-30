@@ -11,17 +11,21 @@ size = Vector3(16.155, 9, 7.74)
 
 [sub_resource type="PrismMesh" id="PrismMesh_eyg38"]
 left_to_right = 0.0
-size = Vector3(25, 15, 7.74)
+size = Vector3(30, 18, 7.74)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rlpm"]
 albedo_color = Color(0.21029852, 0.41796875, 0.15460409, 1)
 
+[sub_resource type="PrismMesh" id="PrismMesh_5avpp"]
+left_to_right = 0.0
+size = Vector3(50, 30, 15)
+
 [node name="Level0Platform" type="Node3D" unique_id=639441976]
 
 [node name="floor" type="CSGBox3D" parent="." unique_id=1635610460]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 26.156424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 31.734602)
 use_collision = true
-size = Vector3(15, 0.5, 120)
+size = Vector3(15, 0.5, 140)
 
 [node name="Pillar" parent="." unique_id=399265933 instance=ExtResource("1_7rlpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 0)
@@ -60,28 +64,28 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 30)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 30)
 
 [node name="Pillar19" parent="." unique_id=2029485919 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 65.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 69.525)
 
 [node name="Pillar20" parent="." unique_id=740073223 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 65.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 69.525)
 
 [node name="Pillar21" parent="." unique_id=1422356709 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 71.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 77.513)
 
 [node name="Pillar22" parent="." unique_id=1994617889 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 71.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 77.513)
 
 [node name="Pillar23" parent="." unique_id=568825253 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 77.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 85.506)
 
 [node name="Pillar24" parent="." unique_id=1881510399 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 77.546684)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 85.506)
 
 [node name="Wall" parent="." unique_id=1714462566 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 20, 4.5, 1.5, 48.950424)
+transform = Transform3D(1, 0, 0, 0, 3.5, 0, 0, 0, 22, 4.5, 3.7012892, 48.950424)
 
 [node name="Wall2" parent="." unique_id=1228135014 instance=ExtResource("1_7rlpm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 20, -4.5, 1.5, 48.976826)
+transform = Transform3D(1, 0, 0, 0, 3.5, 0, 0, 0, 22, -4.5, 3.7012892, 48.976826)
 
 [node name="Pillar11" parent="." unique_id=1014438034 instance=ExtResource("1_7rlpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 18.004175)
@@ -106,42 +110,42 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 4
 mesh = SubResource("PrismMesh_7rlpm")
 
 [node name="StairsToLevel1-2" type="CSGMesh3D" parent="." unique_id=382819609]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2118764, 4.64063, 89.81221)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2118764, 4.64063, 107.23799)
 mesh = SubResource("PrismMesh_7rlpm")
 
 [node name="StairsToLevel1-3" type="CSGMesh3D" parent="." unique_id=414038268]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1444764, 7.5534973, 94.374176)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1444764, 9.175556, 114.20119)
 mesh = SubResource("PrismMesh_eyg38")
 
 [node name="elevator" type="CSGBox3D" parent="." unique_id=886179992]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6912556, 7.425415, 84.96825)
-size = Vector3(4, 15, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6912556, 11.988252, 102.39403)
+size = Vector3(4, 25, 4)
 material = SubResource("StandardMaterial3D_7rlpm")
 
 [node name="level1" type="Node3D" parent="." unique_id=1312000779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 66.524)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="level1" unique_id=1661032181]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.946665, -0.5, 36.411736)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.946665, -0.5, 53.837517)
 size = Vector3(15, 1, 10)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="level1" unique_id=932329012]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8996797, 2.477188, 41.55558)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8996797, 2.477188, 58.98136)
 size = Vector3(15, 5, 1)
 material = ExtResource("2_eyg38")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="level1" unique_id=1266388263]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1484923, 0.78780174, 16.230354)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1484923, 0.78780174, 33.656136)
 size = Vector3(7.5, 1.5, 1)
 material = ExtResource("2_eyg38")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="level1" unique_id=728682922]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.0717616, 2.477188, 38.88598)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.0717616, 2.477188, 56.31176)
 size = Vector3(15, 5, 1)
 material = ExtResource("2_eyg38")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="level1" unique_id=913657002]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.546592, -1.1607599, 23.626503)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.546592, -1.1607599, 41.052284)
 size = Vector3(15, 15, 1)
 material = ExtResource("2_eyg38")
 
@@ -149,25 +153,29 @@ material = ExtResource("2_eyg38")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.526911, 0.86, 41.024345)
 
 [node name="Grip" parent="." unique_id=1103308484 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 39.994747)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 39.442966)
 
 [node name="Grip2" parent="." unique_id=581688332 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 41.78122)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 41.22944)
 
 [node name="Grip3" parent="." unique_id=1309785122 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 43.546223)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 42.994442)
 
 [node name="Grip4" parent="." unique_id=1957104855 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 45.332695)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 44.780914)
 
 [node name="Grip5" parent="." unique_id=1780734457 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 47.134815)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 46.583035)
 
 [node name="Grip6" parent="." unique_id=99659888 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 48.921288)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 48.369507)
 
 [node name="Grip7" parent="." unique_id=978015183 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 50.68629)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 50.13451)
 
 [node name="Grip8" parent="." unique_id=206717789 instance=ExtResource("4_5avpp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 52.472763)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 51.920982)
+
+[node name="StairsToLevel1-4" type="CSGMesh3D" parent="." unique_id=1269884031]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -0.013077736, 15.014114, -62.027058)
+mesh = SubResource("PrismMesh_5avpp")

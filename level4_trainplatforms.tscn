@@ -1,10 +1,75 @@
 [gd_scene format=3 uid="uid://cj8ae7wctn5lh"]
 
+[sub_resource type="PrismMesh" id="PrismMesh_jccgm"]
+left_to_right = 0.0
+size = Vector3(12, 7, 5)
+
+[sub_resource type="PrismMesh" id="PrismMesh_tux73"]
+left_to_right = 0.0
+size = Vector3(12, 7, 3)
+
 [node name="Level4Trainplatforms" type="Node3D" unique_id=1589141337]
 
 [node name="7-8" type="CSGBox3D" parent="." unique_id=1609662890]
 size = Vector3(11, 1, 182)
 
+[node name="roof" type="CSGBox3D" parent="7-8" unique_id=1692048227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.083832, 0)
+size = Vector3(11, 1, 100)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="7-8" unique_id=1944745029]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 13.424043)
+mesh = SubResource("PrismMesh_jccgm")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="7-8" unique_id=857222809]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -13.371982)
+mesh = SubResource("PrismMesh_jccgm")
+
+[node name="1-2" type="CSGBox3D" parent="." unique_id=1304223298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57, 0, 8.078735)
+size = Vector3(11, 1, 220)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="1-2" unique_id=370097560]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 5.32866)
+mesh = SubResource("PrismMesh_tux73")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="1-2" unique_id=931162335]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -21.467363)
+mesh = SubResource("PrismMesh_tux73")
+
 [node name="5-6" type="CSGBox3D" parent="." unique_id=1151461290]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.94852, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.039482, 0.01530838, -0.021513939)
 size = Vector3(11, 1, 430)
+
+[node name="roof" type="CSGBox3D" parent="5-6" unique_id=854850934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.083832, 0)
+size = Vector3(11, 1, 100)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="5-6" unique_id=519976186]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 13.424043)
+mesh = SubResource("PrismMesh_tux73")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="5-6" unique_id=619166125]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -13.371982)
+mesh = SubResource("PrismMesh_tux73")
+
+[node name="3-4" type="CSGBox3D" parent="." unique_id=637290746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.039967, 0.01530838, -11.668208)
+size = Vector3(11, 1, 400)
+
+[node name="roof" type="CSGBox3D" parent="3-4" unique_id=1775376776]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.083832, 11.785084)
+size = Vector3(11, 1, 100)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="3-4" unique_id=971665225]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 25.1483)
+mesh = SubResource("PrismMesh_tux73")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="3-4" unique_id=261686027]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -1.6477232)
+mesh = SubResource("PrismMesh_tux73")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=482577362]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.108549, -6.9880004, 0)
+visible = false
+size = Vector3(15, 1, 150)
