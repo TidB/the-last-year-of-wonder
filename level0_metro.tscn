@@ -1,17 +1,13 @@
 [gd_scene format=3 uid="uid://ctm8ks4pkvnh5"]
 
 [ext_resource type="PackedScene" uid="uid://fhg6ra3bpmds" path="res://pillar.tscn" id="1_7rlpm"]
-[ext_resource type="Material" uid="uid://cd17hub2b3v26" path="res://materials/orange.tres" id="2_eyg38"]
 [ext_resource type="PackedScene" uid="uid://b2vpgqne08gy6" path="res://person.tscn" id="3_vhg5u"]
 [ext_resource type="PackedScene" uid="uid://bgp867o7lb6u1" path="res://grip.tscn" id="4_5avpp"]
+[ext_resource type="Material" uid="uid://dcb3g2h6h4s6h" path="res://materials/beige.tres" id="5_bvmla"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_7rlpm"]
 left_to_right = 0.0
 size = Vector3(16.155, 9, 7.74)
-
-[sub_resource type="PrismMesh" id="PrismMesh_eyg38"]
-left_to_right = 0.0
-size = Vector3(30, 18, 7.74)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rlpm"]
 albedo_color = Color(0.21029852, 0.41796875, 0.15460409, 1)
@@ -109,14 +105,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 5.938143)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 4.4054613, 42.858078)
 mesh = SubResource("PrismMesh_7rlpm")
 
-[node name="StairsToLevel1-2" type="CSGMesh3D" parent="." unique_id=382819609]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2118764, 4.64063, 107.23799)
-mesh = SubResource("PrismMesh_7rlpm")
-
-[node name="StairsToLevel1-3" type="CSGMesh3D" parent="." unique_id=414038268]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1444764, 9.175556, 114.20119)
-mesh = SubResource("PrismMesh_eyg38")
-
 [node name="elevator" type="CSGBox3D" parent="." unique_id=886179992]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6912556, 11.988252, 102.39403)
 size = Vector3(4, 25, 4)
@@ -124,30 +112,6 @@ material = SubResource("StandardMaterial3D_7rlpm")
 
 [node name="level1" type="Node3D" parent="." unique_id=1312000779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 66.524)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="level1" unique_id=1661032181]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.946665, -0.5, 53.837517)
-size = Vector3(15, 1, 10)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="level1" unique_id=932329012]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8996797, 2.477188, 58.98136)
-size = Vector3(15, 5, 1)
-material = ExtResource("2_eyg38")
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="level1" unique_id=1266388263]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.1484923, 0.78780174, 33.656136)
-size = Vector3(7.5, 1.5, 1)
-material = ExtResource("2_eyg38")
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="level1" unique_id=728682922]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.0717616, 2.477188, 56.31176)
-size = Vector3(15, 5, 1)
-material = ExtResource("2_eyg38")
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="level1" unique_id=913657002]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.546592, -1.1607599, 41.052284)
-size = Vector3(15, 15, 1)
-material = ExtResource("2_eyg38")
 
 [node name="Person" parent="." unique_id=103864501 instance=ExtResource("3_vhg5u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.526911, 0.86, 41.024345)
@@ -179,3 +143,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 51.92098
 [node name="StairsToLevel1-4" type="CSGMesh3D" parent="." unique_id=1269884031]
 transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -0.013077736, 15.014114, -62.027058)
 mesh = SubResource("PrismMesh_5avpp")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=1097432233]
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0684948, -7.962166)
+size = Vector3(50, 30, 1)
+material = ExtResource("5_bvmla")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=3374203]
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0684948, 7.9903684)
+size = Vector3(50, 30, 1)
+material = ExtResource("5_bvmla")
