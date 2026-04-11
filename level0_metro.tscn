@@ -103,6 +103,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 1.5, 5.938143)
 
 [node name="StairsToLevel1" type="CSGMesh3D" parent="." unique_id=758792135]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 4.4054613, 42.858078)
+use_collision = true
 mesh = SubResource("PrismMesh_7rlpm")
 
 [node name="elevator" type="CSGBox3D" parent="." unique_id=886179992]
@@ -142,6 +143,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2587934, 1.119596, 51.92098
 
 [node name="StairsToLevel1-4" type="CSGMesh3D" parent="." unique_id=1269884031]
 transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -0.013077736, 15.014114, -62.027058)
+use_collision = true
 mesh = SubResource("PrismMesh_5avpp")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=1097432233]

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://hy64kaiihl1w"]
+
+[ext_resource type="Script" uid="uid://56w3ex8fyqq0" path="res://actors/player.gd" id="1_jx5ha"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kcosh"]
+height = 1.7
+
+[node name="Player" type="CharacterBody3D" unique_id=1918457780]
+script = ExtResource("1_jx5ha")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=641569094]
+shape = SubResource("CapsuleShape3D_kcosh")
+
+[node name="RotationHelper" type="Node3D" parent="." unique_id=476866539]
+
+[node name="Camera" type="Camera3D" parent="RotationHelper" unique_id=396659940]
