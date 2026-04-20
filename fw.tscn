@@ -1,0 +1,163 @@
+[gd_scene format=3 uid="uid://bajd7tueltod5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6nvg1"]
+size = Vector3(0.2, 50, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_g1u43"]
+size = Vector3(0.2, 50, 0.2)
+
+[node name="Fw" type="Node3D" unique_id=173222579]
+
+[node name="axis" type="Node3D" parent="." unique_id=1355951217]
+
+[node name="0deg" type="Node3D" parent="axis" unique_id=1077558898]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="axis/0deg" unique_id=861932732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="axis/0deg" unique_id=1748441833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="axis/0deg" unique_id=345749703]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="axis/0deg" unique_id=1088667426]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="axis/0deg" unique_id=1592884367]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="axis/0deg" unique_id=959588113]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="axis/0deg" unique_id=1075369260]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="axis/0deg" unique_id=1487296108]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="axis/0deg" unique_id=682256400]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="axis/0deg" unique_id=1384486168]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="axis/0deg" unique_id=332816963]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="axis/0deg" unique_id=1087364093]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="10deg" type="Node3D" parent="axis" unique_id=1101212651]
+transform = Transform3D(1, 0, 0, 0, 0.9848077, -0.17364818, 0, 0.17364818, 0.9848077, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="axis/10deg" unique_id=1272112851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="axis/10deg" unique_id=1318948412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="axis/10deg" unique_id=1058158237]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="axis/10deg" unique_id=2046307419]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="axis/10deg" unique_id=1903432389]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="axis/10deg" unique_id=431295586]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="axis/10deg" unique_id=324836361]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="axis/10deg" unique_id=651327707]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="axis/10deg" unique_id=1793423037]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="axis/10deg" unique_id=694585610]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="axis/10deg" unique_id=945108279]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="axis/10deg" unique_id=1485943921]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="20deg" type="Node3D" parent="axis" unique_id=450489093]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="axis/20deg" unique_id=1589494401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="axis/20deg" unique_id=652052915]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="axis/20deg" unique_id=188074352]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="axis/20deg" unique_id=1061596992]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="axis/20deg" unique_id=2008954865]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="axis/20deg" unique_id=1340763159]
+transform = Transform3D(1, 0, 0, 0, 0.86602545, 0.5, 0, -0.5, 0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="axis/20deg" unique_id=372257873]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="axis/20deg" unique_id=1351885159]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.86602545, 0, -0.86602545, 0.5, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="axis/20deg" unique_id=1104452420]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="axis/20deg" unique_id=1123648033]
+transform = Transform3D(1, 0, 0, 0, -0.50000006, 0.86602545, 0, -0.86602545, -0.50000006, 1, 0, 0)
+mesh = SubResource("BoxMesh_g1u43")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="axis/20deg" unique_id=1778629138]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, -1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="axis/20deg" unique_id=1361793780]
+transform = Transform3D(1, 0, 0, 0, -0.86602545, 0.49999997, 0, -0.49999997, -0.86602545, 1, 0, 0)
+mesh = SubResource("BoxMesh_6nvg1")

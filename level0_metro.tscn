@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://ctm8ks4pkvnh5"]
 
 [ext_resource type="PackedScene" uid="uid://fhg6ra3bpmds" path="res://pillar.tscn" id="1_7rlpm"]
+[ext_resource type="Material" uid="uid://di7claspshgtn" path="res://materials/tracks.tres" id="1_wg3st"]
+[ext_resource type="Material" uid="uid://cnphqog33aur" path="res://materials/green.tres" id="2_bvmla"]
 [ext_resource type="PackedScene" uid="uid://b2vpgqne08gy6" path="res://person.tscn" id="3_vhg5u"]
 [ext_resource type="PackedScene" uid="uid://bgp867o7lb6u1" path="res://grip.tscn" id="4_5avpp"]
 [ext_resource type="Material" uid="uid://dcb3g2h6h4s6h" path="res://materials/beige.tres" id="5_bvmla"]
@@ -8,9 +10,6 @@
 [sub_resource type="PrismMesh" id="PrismMesh_7rlpm"]
 left_to_right = 0.0
 size = Vector3(16.155, 9, 7.74)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rlpm"]
-albedo_color = Color(0.21029852, 0.41796875, 0.15460409, 1)
 
 [sub_resource type="PrismMesh" id="PrismMesh_5avpp"]
 left_to_right = 0.0
@@ -22,6 +21,60 @@ size = Vector3(50, 30, 15)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 31.734602)
 use_collision = true
 size = Vector3(15, 0.5, 140)
+
+[node name="floor3" type="CSGBox3D" parent="." unique_id=874146192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.71961117, 31.734602)
+use_collision = true
+size = Vector3(25, 0.5, 140)
+material = ExtResource("1_wg3st")
+
+[node name="floor2" type="CSGBox3D" parent="." unique_id=1657305111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4644527, 30.807154)
+size = Vector3(15, 0.5, 130)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1592698823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9597616, -5.7022724, 0)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=467939730]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
+radius = 7.0
+height = 130.0
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=1221813077]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
+operation = 2
+radius = 5.0
+height = 130.0
+sides = 16
+
+[node name="floor2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=509671584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.5774565, 6.692347, 31.734602)
+operation = 2
+use_collision = true
+size = Vector3(13.36, 6.435, 140)
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="." unique_id=1763719062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.088989, -5.7022724, 0)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D2" unique_id=680946962]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
+radius = 7.0
+height = 130.0
+sides = 16
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCombiner3D2" unique_id=234217843]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
+operation = 2
+radius = 5.0
+height = 130.0
+sides = 16
+
+[node name="floor2" type="CSGBox3D" parent="CSGCombiner3D2" unique_id=1321866420]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8273115, 6.692347, 31.734602)
+operation = 2
+use_collision = true
+size = Vector3(13.36, 6.435, 140)
 
 [node name="Pillar" parent="." unique_id=399265933 instance=ExtResource("1_7rlpm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 1.5, 0)
@@ -108,8 +161,8 @@ mesh = SubResource("PrismMesh_7rlpm")
 
 [node name="elevator" type="CSGBox3D" parent="." unique_id=886179992]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6912556, 11.988252, 102.39403)
-size = Vector3(4, 25, 4)
-material = SubResource("StandardMaterial3D_7rlpm")
+size = Vector3(3.5, 25, 3.5)
+material = ExtResource("2_bvmla")
 
 [node name="level1" type="Node3D" parent="." unique_id=1312000779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 66.524)
