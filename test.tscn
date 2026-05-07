@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://djowy1a8rcybg"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mf4mk"]
+gravity = Vector3(0, 25, 0)
+sub_emitter_mode = 2
+sub_emitter_amount_at_end = 30
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mf4mk"]
+use_point_size = true
+point_size = 36.3
+
+[sub_resource type="PointMesh" id="PointMesh_37kl0"]
+material = SubResource("StandardMaterial3D_mf4mk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8uh7m"]
+direction = Vector3(1, 100, 0)
+spread = 180.0
+flatness = 1.0
+initial_velocity_min = 10.75
+initial_velocity_max = 10.75
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6uqi0"]
+emission_enabled = true
+emission = Color(0, 0.8901961, 0.82716334, 1)
+emission_energy_multiplier = 10.0
+use_point_size = true
+point_size = 20.0
+
+[sub_resource type="PointMesh" id="PointMesh_ppyta"]
+material = SubResource("StandardMaterial3D_6uqi0")
+
+[node name="Test" type="Node3D" unique_id=1091554719]
+
+[node name="rocket" type="GPUParticles3D" parent="." unique_id=1274086724]
+amount = 1
+sub_emitter = NodePath("../explosion")
+process_material = SubResource("ParticleProcessMaterial_mf4mk")
+draw_pass_1 = SubResource("PointMesh_37kl0")
+
+[node name="explosion" type="GPUParticles3D" parent="." unique_id=17596769]
+amount = 30
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_8uh7m")
+draw_pass_1 = SubResource("PointMesh_ppyta")

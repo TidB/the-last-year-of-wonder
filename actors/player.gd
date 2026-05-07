@@ -82,6 +82,7 @@ func process_input(_delta):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			
 
 func process_aim():
 	var size = get_viewport().size

@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://bajd7tueltod5"]
+
+[ext_resource type="PackedScene" uid="uid://lhn5nkneibrm" path="res://fw/spoke.tscn" id="1_048bm"]
+
+[sub_resource type="Animation" id="Animation_048bm"]
+length = 0.001
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("axis")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_t7xap"]
+resource_name = "revolve"
+loop_mode = 1
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("axis")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.5, 1, 1, 0, 0, -4.371139e-08, 1, 1, 0.0017, 0, 0, 0.999962)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_o44r5"]
+_data = {
+&"RESET": SubResource("Animation_048bm"),
+&"revolve": SubResource("Animation_t7xap")
+}
+
+[node name="Fw" type="Node3D" unique_id=173222579]
+
+[node name="axis" type="Node3D" parent="." unique_id=1355951217]
+
+[node name="0deg" type="Node3D" parent="axis" unique_id=1077558898]
+
+[node name="Spoke" parent="axis/0deg" unique_id=1829858855 instance=ExtResource("1_048bm")]
+
+[node name="Spoke2" parent="axis/0deg" unique_id=1588210778 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+
+[node name="Spoke3" parent="axis/0deg" unique_id=1892699219 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.8660254, 0, -0.8660254, 0.5, 0, 0, 0)
+
+[node name="Spoke4" parent="axis/0deg" unique_id=1081327479 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+
+[node name="Spoke5" parent="axis/0deg" unique_id=1246650778 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.8660254, 0, -0.8660254, -0.5, 0, 0, 0)
+
+[node name="Spoke6" parent="axis/0deg" unique_id=1020753206 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.8660254, 0.5, 0, -0.5, -0.8660254, 0, 0, 0)
+
+[node name="10deg" type="Node3D" parent="axis" unique_id=990076618]
+transform = Transform3D(1, 0, 0, 0, 0.98480767, 0.17364816, 0, -0.17364816, 0.98480767, 0, 0, 0)
+
+[node name="Spoke" parent="axis/10deg" unique_id=1479659157 instance=ExtResource("1_048bm")]
+
+[node name="Spoke2" parent="axis/10deg" unique_id=280100357 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+
+[node name="Spoke3" parent="axis/10deg" unique_id=890819681 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.8660254, 0, -0.8660254, 0.5, 0, 0, 0)
+
+[node name="Spoke4" parent="axis/10deg" unique_id=1382577587 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+
+[node name="Spoke5" parent="axis/10deg" unique_id=747613715 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.8660254, 0, -0.8660254, -0.5, 0, 0, 0)
+
+[node name="Spoke6" parent="axis/10deg" unique_id=1583273320 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.8660254, 0.5, 0, -0.5, -0.8660254, 0, 0, 0)
+
+[node name="20deg" type="Node3D" parent="axis" unique_id=617210806]
+transform = Transform3D(1, 0, 0, 0, 0.9396925, 0.3420201, 0, -0.3420201, 0.9396925, 0, 0, 0)
+
+[node name="Spoke" parent="axis/20deg" unique_id=911846578 instance=ExtResource("1_048bm")]
+
+[node name="Spoke2" parent="axis/20deg" unique_id=2009047574 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 0, 0)
+
+[node name="Spoke3" parent="axis/20deg" unique_id=595668237 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.8660254, 0, -0.8660254, 0.5, 0, 0, 0)
+
+[node name="Spoke4" parent="axis/20deg" unique_id=636485438 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+
+[node name="Spoke5" parent="axis/20deg" unique_id=1219654218 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.8660254, 0, -0.8660254, -0.5, 0, 0, 0)
+
+[node name="Spoke6" parent="axis/20deg" unique_id=1325513728 instance=ExtResource("1_048bm")]
+transform = Transform3D(1, 0, 0, 0, -0.8660254, 0.5, 0, -0.5, -0.8660254, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=982736421]
+libraries/ = SubResource("AnimationLibrary_o44r5")
+autoplay = &"revolve"
+speed_scale = 0.005

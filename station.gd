@@ -1,6 +1,10 @@
 extends Node3D
 
 func _ready():
+	pass
+	#export()
+	
+func export():
 	var gltf_document_save := GLTFDocument.new()
 	var gltf_state_save := GLTFState.new()
 	gltf_document_save.visibility_mode = GLTFDocument.VISIBILITY_MODE_INCLUDE_OPTIONAL

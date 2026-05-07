@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://lhn5nkneibrm"]
+
+[ext_resource type="PackedScene" uid="uid://jrp3ygx3xnna" path="res://fw/cabin.tscn" id="1_rwpaj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h3e4e"]
+size = Vector3(0.2, 50, 0.2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rwpaj"]
+size = Vector3(0.2, 4, 0.2)
+
+[node name="Spoke" type="Node3D" unique_id=1829858855]
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=1272010025]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -1, 0, 0)
+mesh = SubResource("BoxMesh_h3e4e")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=1870816487]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 1, 0, 0)
+mesh = SubResource("BoxMesh_h3e4e")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="." unique_id=731988530]
+transform = Transform3D(1, 0, 0, 0, 0.9986865, 0.05123793, 0, -0.05123793, 0.9986865, 0.7825618, 2.363, 25.134)
+mesh = SubResource("BoxMesh_rwpaj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="." unique_id=2109805570]
+transform = Transform3D(1, 0, 0, 0, -0.9986865, -0.051237844, 0, 0.051237844, -0.9986865, 0.7825618, -2.3629978, -25.134)
+mesh = SubResource("BoxMesh_rwpaj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=470811946]
+transform = Transform3D(1, 0, 0, 0, 0.9986865, 0.05123793, 0, -0.05123793, 0.9986865, -0.783, 2.363, 25.134)
+mesh = SubResource("BoxMesh_rwpaj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="." unique_id=1471989054]
+transform = Transform3D(1, 0, 0, 0, -0.9986865, -0.051237844, 0, 0.051237844, -0.9986865, -0.783, -2.3629978, -25.134)
+mesh = SubResource("BoxMesh_rwpaj")
+
+[node name="Cabin" parent="." unique_id=1232924266 instance=ExtResource("1_rwpaj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.0010907948, -4.7683716e-07, 24.868717)
+
+[node name="Cabin2" parent="." unique_id=722702906 instance=ExtResource("1_rwpaj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.0010907948, -4.7683716e-07, -25.041412)
