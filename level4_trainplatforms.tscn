@@ -1,31 +1,56 @@
-[gd_scene format=3 uid="uid://cj8ae7wctn5lh"]
+[gd_scene format=4 uid="uid://cj8ae7wctn5lh"]
 
 [ext_resource type="Material" uid="uid://di7claspshgtn" path="res://materials/tracks.tres" id="1_tux73"]
 
-[sub_resource type="PrismMesh" id="PrismMesh_jccgm"]
-left_to_right = 0.0
-size = Vector3(12, 7, 5)
+[sub_resource type="ArrayMesh" id="ArrayMesh_7xskj"]
+_surfaces = [{
+"aabb": AABB(-6, -3.5, -2.5, 12, 7, 5),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAIA/AAAAP6uqKj8AAAA/q6qqPgAAAD+rqqo+AACAPwAAAAAAAIA/q6oqPwAAAD8AAIA/AAAAP6uqKj8AAIA/AAAAAAAAAACrqqo+AAAAPwAAAAAAAAA/AAAAAAAAAD+rqqo+AAAAPwAAAAAAAIA/q6qqPgAAAACrqio/AAAAAKuqqj4AAAA/AACAPwAAAD8AAIA/AACAP6uqKj8AAIA/q6oqPwAAAACrqio/AAAAP6uqqj4AAAA/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AADAwAAAYEAAACDAAADAwAAAYMAAACDAAADAQAAAYMAAACDAAADAwAAAYEAAACBAAADAwAAAYMAAACBAAADAwAAAYMAAACDAAADAwAAAYMAAACBAAADAQAAAYMAAACBAAADAwAAAYMAAACDAAADAwAAAYEAAACBAAADAQAAAYMAAACBAAADAwAAAYMAAACBAAADAwAAAYEAAACDAAADAwAAAYEAAACBAAADAwAAAYMAAACDAAADAwAAAYEAAACBAAADAwAAAYEAAACDAAADAQAAAYMAAACBAAADAQAAAYMAAACBAAADAQAAAYMAAACDAAADAwAAAYMAAACDAAADAwAAAYEAAACDAAADAQAAAYMAAACDAAADAQAAAYMAAACBA/////wAA/7//////AAD/v/////8AAP+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP///7//fwAA////v/9/AAD///+//3//f////7//f/9/////v/9//3////+/AAD/f/9//78AAP9//3//vwAA/3//f/+/J6/W0P////8nr9bQ/////yev1tD//////38AAP///7//fwAA////v/9/AAD///+/J6/W0P////8nr9bQ/////yev1tD/////")
+}]
 
-[sub_resource type="PrismMesh" id="PrismMesh_tux73"]
-left_to_right = 0.0
-size = Vector3(12, 7, 3)
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tux73"]
+data = PackedVector3Array(-6, 3.5, -2.5, -6, -3.5, -2.5, 6, -3.5, -2.5, -6, 3.5, 2.5, -6, -3.5, 2.5, -6, -3.5, -2.5, -6, -3.5, 2.5, 6, -3.5, 2.5, -6, -3.5, -2.5, -6, 3.5, 2.5, 6, -3.5, 2.5, -6, -3.5, 2.5, -6, 3.5, -2.5, -6, 3.5, 2.5, -6, -3.5, -2.5, -6, 3.5, 2.5, -6, 3.5, -2.5, 6, -3.5, 2.5, 6, -3.5, 2.5, 6, -3.5, -2.5, -6, -3.5, -2.5, -6, 3.5, -2.5, 6, -3.5, -2.5, 6, -3.5, 2.5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7xskj"]
+data = PackedVector3Array(-6, 3.5, -1.5, -6, -3.5, -1.5, 6, -3.5, -1.5, -6, 3.5, 1.5, -6, -3.5, 1.5, -6, -3.5, -1.5, -6, -3.5, 1.5, 6, -3.5, 1.5, -6, -3.5, -1.5, -6, 3.5, 1.5, 6, -3.5, 1.5, -6, -3.5, 1.5, -6, 3.5, -1.5, -6, 3.5, 1.5, -6, -3.5, -1.5, -6, 3.5, 1.5, -6, 3.5, -1.5, 6, -3.5, 1.5, 6, -3.5, 1.5, 6, -3.5, -1.5, -6, -3.5, -1.5, -6, 3.5, -1.5, 6, -3.5, -1.5, 6, -3.5, 1.5)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vsaoi"]
+_surfaces = [{
+"aabb": AABB(-6, -3.5, -1.5, 12, 7, 3),
+"attribute_data": PackedByteArray("AACAPwAAAAAAAIA/AAAAP6uqKj8AAAA/q6qqPgAAAD+rqqo+AACAPwAAAAAAAIA/q6oqPwAAAD8AAIA/AAAAP6uqKj8AAIA/AAAAAAAAAACrqqo+AAAAPwAAAAAAAAA/AAAAAAAAAD+rqqo+AAAAPwAAAAAAAIA/q6qqPgAAAACrqio/AAAAAKuqqj4AAAA/AACAPwAAAD8AAIA/AACAP6uqKj8AAIA/q6oqPwAAAACrqio/AAAAP6uqqj4AAAA/"),
+"format": 34359738391,
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AADAwAAAYEAAAMC/AADAwAAAYMAAAMC/AADAQAAAYMAAAMC/AADAwAAAYEAAAMA/AADAwAAAYMAAAMA/AADAwAAAYMAAAMC/AADAwAAAYMAAAMA/AADAQAAAYMAAAMA/AADAwAAAYMAAAMC/AADAwAAAYEAAAMA/AADAQAAAYMAAAMA/AADAwAAAYMAAAMA/AADAwAAAYEAAAMC/AADAwAAAYEAAAMA/AADAwAAAYMAAAMC/AADAwAAAYEAAAMA/AADAwAAAYEAAAMC/AADAQAAAYMAAAMA/AADAQAAAYMAAAMA/AADAQAAAYMAAAMC/AADAwAAAYMAAAMC/AADAwAAAYEAAAMC/AADAQAAAYMAAAMC/AADAQAAAYMAAAMA//////wAA/7//////AAD/v/////8AAP+/AAD/f/9//78AAP9//3//vwAA/3//f/+//38AAP///7//fwAA////v/9/AAD///+//3//f////7//f/9/////v/9//3////+/AAD/f/9//78AAP9//3//vwAA/3//f/+/J6/W0P////8nr9bQ/////yev1tD//////38AAP///7//fwAA////v/9/AAD///+/J6/W0P////8nr9bQ/////yev1tD/////")
+}]
 
 [node name="Level4Trainplatforms" type="Node3D" unique_id=1589141337]
 
-[node name="7-8" type="CSGBox3D" parent="." unique_id=1609662890]
+[node name="7-8" type="Node3D" parent="." unique_id=313728119]
+
+[node name="platform" type="CSGBox3D" parent="7-8" unique_id=1609662890]
+use_collision = true
 size = Vector3(11, 1, 182)
+
+[node name="cutout" type="CSGBox3D" parent="7-8/platform" unique_id=979509986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.39404)
+operation = 2
+size = Vector3(4.97, 1, 12)
+
+[node name="cutout2" type="CSGBox3D" parent="7-8/platform" unique_id=864339818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.400586)
+operation = 2
+size = Vector3(4.97, 1, 12)
 
 [node name="roof" type="CSGBox3D" parent="7-8" unique_id=1692048227]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 size = Vector3(11, 1, 100)
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="7-8" unique_id=1944745029]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 13.424043)
-mesh = SubResource("PrismMesh_jccgm")
-
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="7-8" unique_id=857222809]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -13.371982)
-mesh = SubResource("PrismMesh_jccgm")
 
 [node name="elevator" type="CSGBox3D" parent="7-8" unique_id=505633387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -52,124 +77,211 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.825291, -0.9023857, 0)
 size = Vector3(11, 1, 430)
 material = ExtResource("1_tux73")
 
-[node name="1-2" type="CSGBox3D" parent="." unique_id=1304223298]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57, 0, 8.078735)
+[node name="stairs" type="StaticBody3D" parent="7-8" unique_id=292245344]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 13.424043)
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="7-8/stairs" unique_id=122248928]
+mesh = SubResource("ArrayMesh_7xskj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="7-8/stairs" unique_id=1679114634]
+shape = SubResource("ConcavePolygonShape3D_tux73")
+
+[node name="stairs2" type="StaticBody3D" parent="7-8" unique_id=826783270]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -13.3588)
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="7-8/stairs2" unique_id=26063049]
+mesh = SubResource("ArrayMesh_7xskj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="7-8/stairs2" unique_id=1436848233]
+shape = SubResource("ConcavePolygonShape3D_tux73")
+
+[node name="1-2" type="Node3D" parent="." unique_id=1417467582]
+
+[node name="platform" type="CSGBox3D" parent="1-2" unique_id=1304223298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.00362, 4.7683716e-07, 8.078586)
+use_collision = true
 size = Vector3(11, 1, 220)
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="1-2" unique_id=370097560]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 5.32866)
-mesh = SubResource("PrismMesh_tux73")
+[node name="cutout" type="CSGBox3D" parent="1-2/platform" unique_id=1793855933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.3138294)
+operation = 2
+size = Vector3(2.9, 1, 12)
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="1-2" unique_id=931162335]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -21.467363)
-mesh = SubResource("PrismMesh_tux73")
+[node name="cutout2" type="CSGBox3D" parent="1-2/platform" unique_id=1969226273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -21.480797)
+operation = 2
+size = Vector3(2.9, 1, 12)
 
 [node name="elevator" type="CSGBox3D" parent="1-2" unique_id=1819565977]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -8.079)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.00362, -0.49999952, -0.00041484833)
 size = Vector3(2.5, 12, 2.5)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="1-2" unique_id=590752440]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9899178, -3.0015798, -21.473614)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -55.013702, -3.0015793, -13.395028)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="1-2" unique_id=1952417404]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9795837, -3.0015798, -21.473614)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -58.983204, -3.0015793, -13.395028)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="1-2" unique_id=669092386]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9889717, -3.0015798, 5.3414497)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -55.01465, -3.0015793, 13.420035)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="1-2" unique_id=271541106]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.985569, -3.0015798, 5.3414497)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -58.98919, -3.0015793, 13.420035)
 size = Vector3(12, 7, 1)
 
 [node name="track" type="CSGBox3D" parent="1-2" unique_id=207838581]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.825291, -0.9023857, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.17833, -0.90238523, 8.078586)
 size = Vector3(11, 1, 430)
 material = ExtResource("1_tux73")
 
-[node name="5-6" type="CSGBox3D" parent="." unique_id=1151461290]
+[node name="stairs" type="StaticBody3D" parent="1-2" unique_id=810886845]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -57.00362, -2.9994695, 13.407246)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="1-2/stairs" unique_id=1719687728]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="1-2/stairs" unique_id=1227778008]
+mesh = SubResource("ArrayMesh_vsaoi")
+
+[node name="stairs2" type="StaticBody3D" parent="1-2" unique_id=1578096248]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -57.00362, -2.9994695, -13.390908)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="1-2/stairs2" unique_id=311887281]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="1-2/stairs2" unique_id=675836645]
+mesh = SubResource("ArrayMesh_vsaoi")
+
+[node name="5-6" type="Node3D" parent="." unique_id=1517043961]
+
+[node name="platform" type="CSGBox3D" parent="5-6" unique_id=1151461290]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.039482, 0.01530838, -0.021513939)
+use_collision = true
 size = Vector3(11, 1, 430)
 
+[node name="cutout" type="CSGBox3D" parent="5-6/platform" unique_id=644365926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13.420867)
+operation = 2
+size = Vector3(2.9, 1, 12)
+
+[node name="cutout2" type="CSGBox3D" parent="5-6/platform" unique_id=1406240783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.37376)
+operation = 2
+size = Vector3(2.9, 1, 12)
+
 [node name="roof" type="CSGBox3D" parent="5-6" unique_id=854850934]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.039482, 6.0153084, -0.021513939)
 size = Vector3(11, 1, 100)
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="5-6" unique_id=519976186]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 13.424043)
-mesh = SubResource("PrismMesh_tux73")
-
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="5-6" unique_id=619166125]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -13.371982)
-mesh = SubResource("PrismMesh_tux73")
-
 [node name="elevator" type="CSGBox3D" parent="5-6" unique_id=1903278762]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.039482, -0.48469162, -0.021513939)
 size = Vector3(2.5, 12, 2.5)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="5-6" unique_id=1122062570]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9899178, -3.0015798, -13.372749)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.049564, -2.9862714, -13.394263)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="5-6" unique_id=312280365]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9795856, -3.0015798, -13.372749)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -21.019068, -2.9862714, -13.394263)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="5-6" unique_id=1813248840]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9889717, -3.0015798, 13.442313)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.05051, -2.9862714, 13.420799)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="5-6" unique_id=9327474]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.985569, -3.0015798, 13.442313)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -21.025051, -2.9862714, 13.420799)
 size = Vector3(12, 7, 1)
 
 [node name="track" type="CSGBox3D" parent="5-6" unique_id=1120428986]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.825291, -0.9023857, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.214191, -0.88707733, -0.021513939)
 size = Vector3(11, 1, 430)
 material = ExtResource("1_tux73")
 
-[node name="3-4" type="CSGBox3D" parent="." unique_id=637290746]
+[node name="stairs" type="StaticBody3D" parent="5-6" unique_id=1133510854]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -19.146523, -2.9841616, 13.450608)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="5-6/stairs" unique_id=1525122]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="5-6/stairs" unique_id=1318209896]
+mesh = SubResource("ArrayMesh_vsaoi")
+
+[node name="stairs2" type="StaticBody3D" parent="5-6" unique_id=1729131527]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -19.146523, -2.9841616, -13.347547)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="5-6/stairs2" unique_id=1069772639]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="5-6/stairs2" unique_id=1170214146]
+mesh = SubResource("ArrayMesh_vsaoi")
+
+[node name="3-4" type="Node3D" parent="." unique_id=565143326]
+
+[node name="platform" type="CSGBox3D" parent="3-4" unique_id=637290746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.039967, 0.01530838, -11.668208)
+use_collision = true
 size = Vector3(11, 1, 400)
 
+[node name="cutout" type="CSGBox3D" parent="3-4/platform" unique_id=368150778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25.108755)
+operation = 2
+size = Vector3(2.9, 1, 12)
+
+[node name="cutout2" type="CSGBox3D" parent="3-4/platform" unique_id=1538339701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.6858721)
+operation = 2
+size = Vector3(2.9, 1, 12)
+
 [node name="roof" type="CSGBox3D" parent="3-4" unique_id=1775376776]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 11.785084)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.039967, 6.0153084, 0.11687565)
 size = Vector3(11, 1, 100)
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="3-4" unique_id=971665225]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, -2.99947, 25.1483)
-mesh = SubResource("PrismMesh_tux73")
-
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="3-4" unique_id=261686027]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.99947, -1.6477232)
-mesh = SubResource("PrismMesh_tux73")
-
 [node name="elevator" type="CSGBox3D" parent="3-4" unique_id=2062447053]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 11.6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.039967, -0.48469162, -0.06820774)
 size = Vector3(2.5, 12, 2.5)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="3-4" unique_id=368828713]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9899178, -3.0015798, -1.7431011)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -36.05005, -2.9862714, -13.411309)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D8" type="CSGBox3D" parent="3-4" unique_id=925299211]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9795876, -3.0015798, -1.7431011)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40.019554, -2.9862714, -13.411309)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D9" type="CSGBox3D" parent="3-4" unique_id=917616384]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.9889717, -3.0015798, 25.071962)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -36.050995, -2.9862714, 13.403754)
 size = Vector3(12, 7, 1)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="3-4" unique_id=737901174]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.985569, -3.0015798, 25.071962)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40.025536, -2.9862714, 13.403754)
 size = Vector3(12, 7, 1)
 
 [node name="track" type="CSGBox3D" parent="3-4" unique_id=840214436]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.825291, -0.9023857, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.214676, -0.88707733, -11.668208)
 size = Vector3(11, 1, 430)
 material = ExtResource("1_tux73")
+
+[node name="stairs" type="StaticBody3D" parent="3-4" unique_id=1428722718]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -38.039967, -2.9841616, 13.471082)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="3-4/stairs" unique_id=1592894186]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="3-4/stairs" unique_id=80663325]
+mesh = SubResource("ArrayMesh_vsaoi")
+
+[node name="stairs2" type="StaticBody3D" parent="3-4" unique_id=102268022]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -38.039967, -2.9841616, -13.327075)
+
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="3-4/stairs2" unique_id=1998122824]
+shape = SubResource("ConcavePolygonShape3D_7xskj")
+
+[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="3-4/stairs2" unique_id=649216987]
+mesh = SubResource("ArrayMesh_vsaoi")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=2124294877]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.032401, -3.0015798, 7.903988)

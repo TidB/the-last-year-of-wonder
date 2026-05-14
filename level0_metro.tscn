@@ -30,10 +30,12 @@ material = ExtResource("1_wg3st")
 
 [node name="floor2" type="CSGBox3D" parent="." unique_id=1657305111]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4644527, 30.807154)
+visible = false
 size = Vector3(15, 0.5, 130)
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1592698823]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9597616, -5.7022724, 0)
+visible = false
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=467939730]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
@@ -56,6 +58,7 @@ size = Vector3(13.36, 6.435, 140)
 
 [node name="CSGCombiner3D2" type="CSGCombiner3D" parent="." unique_id=1763719062]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.088989, -5.7022724, 0)
+visible = false
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D2" unique_id=680946962]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 4.9521885, 29.977104)
@@ -200,11 +203,11 @@ use_collision = true
 mesh = SubResource("PrismMesh_5avpp")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=1097432233]
-transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0684948, -7.962166)
-size = Vector3(50, 30, 1)
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, 2.4493618, -7.962166)
+size = Vector3(50, 36, 1)
 material = ExtResource("5_bvmla")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=3374203]
-transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0684948, 7.9903684)
-size = Vector3(50, 30, 1)
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, 2.4493618, 7.9903684)
+size = Vector3(50, 36, 1)
 material = ExtResource("5_bvmla")

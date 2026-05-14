@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://0rmde1ejgnpx"]
+
+[ext_resource type="PackedScene" uid="uid://chcl3qc32x57o" path="res://demo_scene.glb" id="1_iapjp"]
+[ext_resource type="PackedScene" uid="uid://hy64kaiihl1w" path="res://actors/Player.tscn" id="2_8n7uv"]
+[ext_resource type="Environment" uid="uid://ystt77fhy8k2" path="res://env.tres" id="3_ayuu8"]
+[ext_resource type="LightmapGIData" uid="uid://defn47bjiced3" path="res://lightmaps/demo_scene.lmbake" id="4_ctgmk"]
+[ext_resource type="PackedScene" uid="uid://cbfkuecs6ha6" path="res://actors/npc.tscn" id="5_1hm1i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8n7uv"]
+size = Vector3(100, 1, 50)
+
+[node name="demo_scene" unique_id=1112122875 instance=ExtResource("1_iapjp")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_0" parent_id_path=PackedInt32Array(809644713) index="0" unique_id=844627048]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_0/StaticBody3D" index="0" unique_id=1937402232]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.51625943, 0)
+shape = SubResource("BoxShape3D_8n7uv")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="2" unique_id=1023881633]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.1497164, 0)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="3" unique_id=610766403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.068075, -1.1497164, 0)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="4" unique_id=1927552882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2777834, -1.1497164, 0)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="5" unique_id=1783338681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10469246, 9.583825)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="6" unique_id=1165101495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.068075, 0.10469246, 9.583825)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="7" unique_id=1220011912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2777834, 0.10469246, 9.583825)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="8" unique_id=1047586463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10469246, -9.83241)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="9" unique_id=1467204348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.068075, 0.10469246, -9.83241)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="middle_lamp_support" parent_id_path=PackedInt32Array(383914337) index="10" unique_id=1883260995]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2777834, 0.10469246, -9.83241)
+omni_range = 10.0
+omni_attenuation = 0.5
+
+[node name="Player" parent="." index="44" unique_id=1918457780 instance=ExtResource("2_8n7uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.053169, 1.8826145, 2.5958238)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="45" unique_id=791423101]
+environment = ExtResource("3_ayuu8")
+
+[node name="LightmapGI" type="LightmapGI" parent="." index="46" unique_id=1741954620]
+visible = false
+quality = 2
+interior = true
+light_data = ExtResource("4_ctgmk")
+
+[node name="Npc" parent="." index="47" unique_id=74501770 instance=ExtResource("5_1hm1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.432306, 0.8337406, -1.1992297)

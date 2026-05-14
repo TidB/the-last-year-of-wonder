@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://hy64kaiihl1w" path="res://actors/Player.tscn" id="5_k7ugr"]
 [ext_resource type="Material" uid="uid://cnphqog33aur" path="res://materials/green.tres" id="6_qalsi"]
 [ext_resource type="PackedScene" uid="uid://djowy1a8rcybg" path="res://test.tscn" id="10_bmuap"]
+[ext_resource type="PackedScene" uid="uid://0rmde1ejgnpx" path="res://demo_scene.tscn" id="11_7imi8"]
+[ext_resource type="Environment" uid="uid://ystt77fhy8k2" path="res://env.tres" id="11_yr24d"]
 
 [sub_resource type="PrismMesh" id="PrismMesh_k7ugr"]
 left_to_right = 0.0
@@ -58,23 +60,26 @@ albedo_color = Color(0.79364496, 1, 0.64705133, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yr24d"]
 albedo_color = Color(0.6355655, 0.6414193, 1, 1)
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bmuap"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_yr24d"]
 
-[sub_resource type="Sky" id="Sky_7imi8"]
-sky_material = SubResource("ProceduralSkyMaterial_bmuap")
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rehnx"]
+noise = SubResource("FastNoiseLite_yr24d")
+as_normal_map = true
 
-[sub_resource type="Environment" id="Environment_yr24d"]
-background_mode = 2
-sky = SubResource("Sky_7imi8")
-glow_enabled = true
-glow_levels/1 = 0.5
-glow_levels/2 = 0.5
-glow_levels/4 = 0.3
-glow_levels/5 = 0.5
-glow_levels/6 = 0.5
-glow_levels/7 = 0.5
-volumetric_fog_enabled = true
-volumetric_fog_density = 0.0
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_atg86"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_6nsqa"]
+noise = SubResource("FastNoiseLite_atg86")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j670d"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.15294118)
+roughness = 0.0
+normal_enabled = true
+normal_texture = SubResource("NoiseTexture2D_rehnx")
+refraction_enabled = true
+refraction_scale = 1.0
+refraction_texture = SubResource("NoiseTexture2D_6nsqa")
 
 [node name="Station" type="Node3D" unique_id=846187049]
 script = ExtResource("1_olwe1")
@@ -449,9 +454,6 @@ transform = Transform3D(-5, -7.54979e-07, -3.300118e-14, 0, -2.1855695e-07, 5, -
 polygon = PackedVector2Array(0, 0, 0, 1, 1, 0, 1, 0)
 material = ExtResource("6_qalsi")
 
-[node name="Fw" parent="level2" unique_id=173222579 instance=ExtResource("5_72kuv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.725952, 27.368876, 199.74728)
-
 [node name="elevator" type="CSGBox3D" parent="level2" unique_id=664441945]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.01869, -2.355421, -23.918022)
 size = Vector3(3.5, 17, 3.5)
@@ -524,6 +526,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7440042, -3.8163738, 28.72
 use_collision = true
 size = Vector3(60, 1, 50)
 
+[node name="CSGBox3D5" type="CSGBox3D" parent="Level3Trainstation" unique_id=548220535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.998602, -3.8163738, -5.6711845)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Level3Trainstation" unique_id=1651141665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.808712, -3.8163738, -5.6711845)
+use_collision = true
+size = Vector3(20, 1, 20)
+
 [node name="CSGBox3D3" type="CSGBox3D" parent="Level3Trainstation" unique_id=304806074]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.276471, -3.8163738, 223.56288)
 use_collision = true
@@ -572,7 +584,7 @@ size = Vector3(20, 5, 8)
 material = SubResource("StandardMaterial3D_olwe1")
 
 [node name="Bakery3" type="CSGBox3D" parent="Level3Trainstation" unique_id=702035697]
-transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, 26.701424, -0.8197899, 30.859297)
+transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, 26.701424, -0.8197899, 19.741096)
 size = Vector3(12, 5, 8)
 material = SubResource("StandardMaterial3D_olwe1")
 
@@ -599,6 +611,38 @@ mesh = SubResource("PrismMesh_sum1q")
 [node name="Level4Trainplatforms" parent="." unique_id=1589141337 instance=ExtResource("4_oblqs")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9590759, 36.501484, -47.278584)
 
+[node name="CSGBox3D8" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=861579950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.29446, -3.0015793, 22.895527)
+size = Vector3(15.25, 7, 1)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=174763319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.53938, -3.0015793, 8.606703)
+size = Vector3(15.25, 7, 1)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=17158982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.53938, -3.0015793, -9.197782)
+size = Vector3(15.25, 7, 1)
+
+[node name="transparentband" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=129225967]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 67.54135, -3.0015793, -0.31942648)
+visible = false
+size = Vector3(17, 7, 1)
+material = SubResource("StandardMaterial3D_j670d")
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Level4Trainplatforms/transparentband" unique_id=2040778946]
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=1326673619]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 54.42497, -3.0015793, 15.732152)
+size = Vector3(15.25, 7, 1)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=1449784240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.29446, -3.0015793, -23.611559)
+size = Vector3(15.25, 7, 1)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Level4Trainplatforms" unique_id=870301542]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 54.42497, -3.0015793, -16.429674)
+size = Vector3(15.25, 7, 1)
+
 [node name="Person3" parent="." unique_id=1796803382 instance=ExtResource("3_sum1q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8450558, 30.969769, 9.998822)
 
@@ -614,10 +658,43 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.818166, 18.907757, 123.912
 [node name="Player" parent="." unique_id=1384980827 instance=ExtResource("5_k7ugr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.547611, 19.804657, 94.10164)
 
-[node name="outsidebuildings" type="Node3D" parent="." unique_id=1915402024]
+[node name="outside" type="Node3D" parent="." unique_id=1915402024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.270125, 33.319, 106.54963)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="outside" unique_id=212329082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.904774, -3.8163738, -5.046875)
+use_collision = true
+size = Vector3(60, 1, 50)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="outside" unique_id=42736757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.904774, -3.8163738, 119.51348)
+use_collision = true
+size = Vector3(60, 1, 200)
+
+[node name="street" type="CSGBox3D" parent="outside" unique_id=773213163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.904774, -3.7967606, -5.046875)
+use_collision = true
+size = Vector3(150, 1, 10)
+material = ExtResource("5_87b1w")
+
+[node name="Fw" parent="outside" unique_id=173222579 instance=ExtResource("5_72kuv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.996077, 24.038742, 188.85464)
+
+[node name="MainEntranceRoof" type="CSGBox3D" parent="outside" unique_id=67564458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.122234, 6.6407204, 17.014847)
+size = Vector3(45.56, 20, 20)
+
+[node name="MainEntranceRoof2" type="CSGBox3D" parent="outside" unique_id=1254114473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.005434, 5.6207314, 17.014847)
+size = Vector3(45.56, 18, 20)
 
 [node name="Test" parent="." unique_id=1091554719 instance=ExtResource("10_bmuap")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.529543, 32.991234, 71.34435)
+visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=93344638]
-environment = SubResource("Environment_yr24d")
+environment = ExtResource("11_yr24d")
+
+[node name="demo_scene" parent="." unique_id=270910932 instance=ExtResource("11_7imi8")]
+transform = Transform3D(0, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 0, 13.428035, 0.022666454, 0)
+visible = false

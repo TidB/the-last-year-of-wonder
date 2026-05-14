@@ -14,3 +14,4 @@ shape = SubResource("CapsuleShape3D_kcosh")
 [node name="RotationHelper" type="Node3D" parent="." unique_id=476866539]
 
 [node name="Camera" type="Camera3D" parent="RotationHelper" unique_id=396659940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
