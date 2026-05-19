@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://lhn5nkneibrm"]
 
-[ext_resource type="PackedScene" uid="uid://jrp3ygx3xnna" path="res://fw/cabin.tscn" id="1_rwpaj"]
+[ext_resource type="PackedScene" uid="uid://jrp3ygx3xnna" path="res://assets/fw/cabin.tscn" id="1_rwpaj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_h3e4e"]
 size = Vector3(0.2, 50, 0.2)

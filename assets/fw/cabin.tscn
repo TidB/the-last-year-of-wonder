@@ -7,8 +7,10 @@ emission_energy_multiplier = 10.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_offce"]
 material = SubResource("StandardMaterial3D_offce")
-radius = 0.7
-height = 2.2
+radius = 1.0
+height = 2.5
+radial_segments = 20
+rings = 4
 
 [node name="Cabin" type="Node3D" unique_id=1232924266]
 

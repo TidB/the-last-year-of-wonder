@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bajd7tueltod5"]
 
-[ext_resource type="PackedScene" uid="uid://lhn5nkneibrm" path="res://fw/spoke.tscn" id="1_048bm"]
+[ext_resource type="PackedScene" uid="uid://lhn5nkneibrm" path="res://assets/fw/spoke.tscn" id="1_048bm"]
 
 [sub_resource type="Animation" id="Animation_048bm"]
 length = 0.001

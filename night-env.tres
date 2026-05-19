@@ -1,9 +1,9 @@
-[gd_resource type="Environment" format=3 uid="uid://ystt77fhy8k2"]
+[gd_resource type="Environment" format=3 uid="uid://depy0ftad2hk4"]
 
-[ext_resource type="Material" uid="uid://drktd5o7a8ks5" path="res://night.tres" id="1_bbofm"]
+[ext_resource type="Material" uid="uid://drktd5o7a8ks5" path="res://night.tres" id="1_dlc6w"]
 
 [sub_resource type="Sky" id="Sky_7imi8"]
-sky_material = ExtResource("1_bbofm")
+sky_material = ExtResource("1_dlc6w")
 
 [resource]
 background_mode = 1

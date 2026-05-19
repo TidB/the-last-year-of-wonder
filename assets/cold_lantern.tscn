@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ccu4gq0bnmoj5"]
+
+[ext_resource type="PackedScene" uid="uid://bkr3561cky0b2" path="res://assets/lantern.tscn" id="1_4m2lq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4m2lq"]
+emission_enabled = true
+emission = Color(0.6632459, 0.97760075, 1, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_6vnqh"]
+material = SubResource("StandardMaterial3D_4m2lq")
+radius = 0.2
+height = 0.2
+
+[node name="Lantern" unique_id=1331957748 instance=ExtResource("1_4m2lq")]
+
+[node name="MeshInstance3D2" parent="." index="1" unique_id=56931963]
+mesh = SubResource("SphereMesh_6vnqh")

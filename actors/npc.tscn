@@ -25,10 +25,14 @@ uniform vec3 uv1_offset;
 uniform vec3 uv2_scale;
 uniform vec3 uv2_offset;
 
+float random (vec2 uv) {
+    return fract(sin(dot(uv.xy, vec2(12.9898,78.233))) * 43758.5453123);
+}
+
 void vertex() {
 	UV = UV * uv1_scale.xy + uv1_offset.xy;
 	
-	//VERTEX.y = VERTEX.y + (sin(TIME) * 0.1);
+	//VERTEX.y = VERTEX.y + random(vec2((sin(TIME) * 0.000001), 0.0));//(sin(TIME) * 0.1);
 }
 
 void fragment() {

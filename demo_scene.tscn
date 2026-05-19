@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://0rmde1ejgnpx"]
 
 [ext_resource type="PackedScene" uid="uid://chcl3qc32x57o" path="res://demo_scene.glb" id="1_iapjp"]
-[ext_resource type="PackedScene" uid="uid://hy64kaiihl1w" path="res://actors/Player.tscn" id="2_8n7uv"]
 [ext_resource type="Environment" uid="uid://ystt77fhy8k2" path="res://env.tres" id="3_ayuu8"]
 [ext_resource type="LightmapGIData" uid="uid://defn47bjiced3" path="res://lightmaps/demo_scene.lmbake" id="4_ctgmk"]
 [ext_resource type="PackedScene" uid="uid://cbfkuecs6ha6" path="res://actors/npc.tscn" id="5_1hm1i"]
@@ -62,17 +61,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2777834, 0.10469246, -9.83
 omni_range = 10.0
 omni_attenuation = 0.5
 
-[node name="Player" parent="." index="44" unique_id=1918457780 instance=ExtResource("2_8n7uv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.053169, 1.8826145, 2.5958238)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="45" unique_id=791423101]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="44" unique_id=791423101]
 environment = ExtResource("3_ayuu8")
 
-[node name="LightmapGI" type="LightmapGI" parent="." index="46" unique_id=1741954620]
+[node name="LightmapGI" type="LightmapGI" parent="." index="45" unique_id=1741954620]
 visible = false
 quality = 2
 interior = true
 light_data = ExtResource("4_ctgmk")
 
-[node name="Npc" parent="." index="47" unique_id=74501770 instance=ExtResource("5_1hm1i")]
+[node name="Npc" parent="." index="46" unique_id=74501770 instance=ExtResource("5_1hm1i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.432306, 0.8337406, -1.1992297)

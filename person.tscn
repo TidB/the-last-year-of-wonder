@@ -3,6 +3,8 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_u6ccd"]
 radius = 0.3
 height = 1.72
+radial_segments = 10
+rings = 4
 
 [node name="Person" type="Node3D" unique_id=103864501]
 

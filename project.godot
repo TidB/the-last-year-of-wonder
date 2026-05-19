@@ -13,11 +13,12 @@ config_version=5
 config/name="The Last Year of Wonder"
 run/main_scene="uid://dutkpexykwxxj"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=30
 config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 
 [input]
 
@@ -60,3 +61,5 @@ sprint={
 
 rendering_device/driver.windows="d3d12"
 anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/use_debanding=true
+anti_aliasing/quality/screen_space_aa=1
