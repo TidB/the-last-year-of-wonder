@@ -203,11 +203,15 @@ use_collision = true
 mesh = SubResource("PrismMesh_5avpp")
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=1097432233]
-transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, 2.4493618, -7.962166)
-size = Vector3(50, 36, 1)
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0506382, -7.962166)
+size = Vector3(50, 31, 1)
 material = ExtResource("5_bvmla")
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="StairsToLevel1-4" unique_id=3374203]
-transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, 2.4493618, 7.9903684)
-size = Vector3(50, 36, 1)
+transform = Transform3D(-1, 0, -8.742276e-08, 0, 1, 0, 8.742276e-08, 0, -1, 0.023204803, -0.0506382, 7.9903684)
+size = Vector3(50, 31, 1)
 material = ExtResource("5_bvmla")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1930621449]
+transform = Transform3D(1, 0, 0, 0, 0.5150381, 0.8571673, 0, -0.8571673, 0.5150381, 0, 23.424103, -61.894917)
+size = Vector3(16.365, 58, 0.2)

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cbfkuecs6ha6"]
 
+[ext_resource type="Script" uid="uid://bgkrhc8nkgflm" path="res://actors/npc.gd" id="1_louo0"]
+
 [sub_resource type="Shader" id="Shader_karnd"]
 code = "// NOTE: Shader automatically converted from Godot Engine 4.6.1.stable's StandardMaterial3D.
 
@@ -91,8 +93,22 @@ radius = 0.4
 height = 1.7
 
 [node name="Npc" type="Node3D" unique_id=74501770]
+script = ExtResource("1_louo0")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1723845741]
 mesh = SubResource("CapsuleMesh_karnd")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="." unique_id=1806237302]
+
+[node name="Helper" type="Node3D" parent="." unique_id=1135615376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32160056, 0)
+
+[node name="Dialogue" type="Label3D" parent="Helper" unique_id=1262352940]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+pixel_size = 0.001
+no_depth_test = true
+text = "TEST"
+font_size = 200
+outline_size = 30
+autowrap_mode = 2
+width = 4000.0

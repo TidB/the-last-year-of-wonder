@@ -177,13 +177,13 @@ func process_speech():
 
 func entered_dialogue(dia_node):
 	self.current_dialogue = dia_node
-	self.ui.display_dialogue(true)
+	#self.ui.display_dialogue(true)
 	process_speech()
 
 func exited_dialogue(dia_node):
 	self.speech_state = State.Nothing
 	self.current_dialogue = null
-	self.ui.display_dialogue(false)
+	#self.ui.display_dialogue(false)
 
 func update_highlight():
 	if is_instance_valid(highlighted_obj):

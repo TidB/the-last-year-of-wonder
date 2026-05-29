@@ -1,9 +1,14 @@
 extends Node3D
 
 func _ready():
-	pass
+	var dialogues = get_tree().get_nodes_in_group(Global.DIALOGUE_GROUP)
+	for d in dialogues:
+		d.set_player(%Player)  # TODO: At some point, we might switch to signals
 	#export()
 	
+func _process(_delta):
+	get_tree().call_group("npc", "look_at_player", %Player.position)
+
 func export():
 	var gltf_document_save := GLTFDocument.new()
 	var gltf_state_save := GLTFState.new()
