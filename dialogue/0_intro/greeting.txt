@@ -1,4 +1,4 @@
-o You've been looking out at the Ferris Wheel for quite some time.
-o Unfortunate timing though.
-o The entire station's closed, can't go out.
-o You should come back another time.
+n You've been looking out at the Ferris Wheel for quite some time.
+n Unfortunate timing though.
+n The entire station's closed, can't go out.
+n You should come back another time.

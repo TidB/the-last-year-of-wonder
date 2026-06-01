@@ -150,12 +150,12 @@ func process_speech():
 		var line = self.current_dialogue.get_current_line() # TODO: advancing the line should happen separately
 		if line == null:
 			self.ui_clear_line.emit()
-			self.current_dialogue.other.clear_line()
-		elif line[0] == self.current_dialogue.Action.PLAYER:
-			self.ui_write_line.emit(line[1])
-			self.current_dialogue.other.clear_line()
-		elif line[0] == self.current_dialogue.Action.OTHER:
-			self.current_dialogue.other.write_line(line[1])
+			self.current_dialogue.clear_other(null)
+		elif line['action'] == self.current_dialogue.Action.PLAYER:
+			self.ui_write_line.emit(line['line'])
+			self.current_dialogue.clear_other(line['speaker'])
+		elif line['action'] == self.current_dialogue.Action.OTHER:
+			self.current_dialogue.write_other(line['speaker'], line['line'])
 			self.ui_clear_line.emit()
 			
 		#last_line = Time.get_ticks_msec()

@@ -13,8 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://djowy1a8rcybg" path="res://test.tscn" id="10_bmuap"]
 [ext_resource type="PackedScene" uid="uid://dc76hbc4fx2mk" path="res://assets/warm_lantern.tscn" id="10_rehnx"]
 [ext_resource type="PackedScene" uid="uid://0rmde1ejgnpx" path="res://demo_scene.tscn" id="11_7imi8"]
-[ext_resource type="Environment" uid="uid://cohqfhnidtyue" path="res://dusk-env.tres" id="12_atg86"]
 [ext_resource type="PackedScene" uid="uid://bkr3561cky0b2" path="res://assets/lantern.tscn" id="14_atg86"]
+[ext_resource type="Environment" uid="uid://depy0ftad2hk4" path="res://night-env.tres" id="15_jl1yo"]
 [ext_resource type="PackedScene" uid="uid://ccu4gq0bnmoj5" path="res://assets/cold_lantern.tscn" id="16_j670d"]
 [ext_resource type="PackedScene" uid="uid://cbfkuecs6ha6" path="res://actors/npc.tscn" id="17_7k7pn"]
 [ext_resource type="PackedScene" uid="uid://ct1yd2skln8vv" path="res://dialogue/dialogue.tscn" id="18_jl1yo"]
@@ -1213,7 +1213,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.529543, 32.991234, 71.3443
 visible = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=93344638]
-environment = ExtResource("12_atg86")
+environment = ExtResource("15_jl1yo")
 
 [node name="demo_scene" parent="." unique_id=270910932 instance=ExtResource("11_7imi8")]
 transform = Transform3D(0, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 0, 13.428035, 0.022666454, 0)
@@ -1265,8 +1265,8 @@ size = Vector3(45.56, 20, 20)
 transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 82.67405, 48.352314, -179.3754)
 size = Vector3(5, 20, 20)
 
-[node name="Npc" parent="." unique_id=74501770 instance=ExtResource("17_7k7pn")]
+[node name="Dialogue" parent="." unique_id=1113950919 instance=ExtResource("18_jl1yo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.48738, 37.851482, 10.656864)
-
-[node name="Dialogue" parent="Npc" unique_id=1113950919 instance=ExtResource("18_jl1yo")]
 dialogue_name = "0_intro/greeting"
+
+[node name="Npc" parent="Dialogue" unique_id=74501770 instance=ExtResource("17_7k7pn")]

@@ -47,7 +47,7 @@ void fragment() {
 	METALLIC = metallic_tex * metallic;
 	SPECULAR = specular;
 	
-	//EMISSION = vec3(1.0);
+	EMISSION = vec3(0.1);
 
 	vec4 roughness_texture_channel = vec4(1.0, 0.0, 0.0, 0.0);
 	float roughness_tex = dot(texture(texture_roughness, base_uv), roughness_texture_channel);
@@ -75,7 +75,7 @@ render_priority = 0
 shader = SubResource("Shader_karnd")
 shader_parameter/albedo = Color(0.83984375, 0.83984375, 0.83984375, 1)
 shader_parameter/texture_albedo = SubResource("NoiseTexture2D_qbes0")
-shader_parameter/alpha_hash_scale = 0.999999977648
+shader_parameter/alpha_hash_scale = 1.999999955296
 shader_parameter/albedo_texture_size = Vector2i(512, 512)
 shader_parameter/point_size = 1.0
 shader_parameter/roughness = 1.0
