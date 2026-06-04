@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://djowy1a8rcybg"]
+
+[ext_resource type="Script" uid="uid://tp8lb5kkrtxc" path="res://assets/firework/firework.gd" id="1_g2i6i"]
+[ext_resource type="Script" uid="uid://cbeymfdun1a3u" path="res://assets/firework/explosion.gd" id="2_edwlx"]
+[ext_resource type="Material" uid="uid://ov0vkpm84b64" path="res://assets/firework/fw_particles.tres" id="3_tmtfk"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mf4mk"]
+gravity = Vector3(0, 40, 0)
+sub_emitter_mode = 2
+sub_emitter_amount_at_end = 32
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mf4mk"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 7.0
+use_point_size = true
+point_size = 10.0
+
+[sub_resource type="PointMesh" id="PointMesh_37kl0"]
+material = SubResource("StandardMaterial3D_mf4mk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8uh7m"]
+particle_flag_align_y = true
+direction = Vector3(1, 100, 0)
+spread = 180.0
+initial_velocity_min = 10.75
+initial_velocity_max = 10.75
+gravity = Vector3(0, -5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37kl0"]
+cull_mode = 2
+emission_enabled = true
+emission = Color(0, 0.8273995, 1, 1)
+emission_energy_multiplier = 5.0
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_8uh7m"]
+material = SubResource("StandardMaterial3D_37kl0")
+shape = 0
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_tmtfk"]
+material = SubResource("StandardMaterial3D_37kl0")
+shape = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_edwlx"]
+cull_mode = 2
+emission_enabled = true
+emission = Color(0, 0.83333325, 1, 1)
+emission_energy_multiplier = 5.0
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_edwlx"]
+material = SubResource("StandardMaterial3D_edwlx")
+shape = 0
+sections = 20
+section_length = 0.5
+
+[node name="firework" type="Node3D" unique_id=1091554719]
+script = ExtResource("1_g2i6i")
+
+[node name="rocket" type="GPUParticles3D" parent="." unique_id=1274086724]
+visible = false
+amount = 1
+sub_emitter = NodePath("../explosion")
+lifetime = 1.5
+visibility_aabb = AABB(-4, -5, -4, 8, 50, 8)
+process_material = SubResource("ParticleProcessMaterial_mf4mk")
+draw_pass_1 = SubResource("PointMesh_37kl0")
+
+[node name="explosion" type="GPUParticles3D" parent="." unique_id=17596769]
+visible = false
+cast_shadow = 0
+amount = 1000
+explosiveness = 1.0
+visibility_aabb = AABB(-4, -5, -4, 8, 50, 8)
+process_material = SubResource("ParticleProcessMaterial_8uh7m")
+draw_pass_1 = SubResource("RibbonTrailMesh_8uh7m")
+
+[node name="explosion2" type="GPUParticles3D" parent="." unique_id=1085410008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.1255474, 0)
+cast_shadow = 0
+emitting = false
+amount = 500
+lifetime = 2.5
+one_shot = true
+explosiveness = 1.0
+visibility_aabb = AABB(-4, -37.01, -4, 8, 50, 8)
+trail_enabled = true
+process_material = ExtResource("3_tmtfk")
+draw_pass_1 = SubResource("RibbonTrailMesh_tmtfk")
+script = ExtResource("2_edwlx")
+
+[node name="explosionribbontest" type="GPUParticles3D" parent="." unique_id=1521014928]
+visible = false
+cast_shadow = 0
+amount = 500
+lifetime = 2.5
+explosiveness = 1.0
+visibility_aabb = AABB(-4, -37.01, -4, 8, 50, 8)
+trail_enabled = true
+process_material = ExtResource("3_tmtfk")
+draw_pass_1 = SubResource("RibbonTrailMesh_edwlx")
+script = ExtResource("2_edwlx")
+
+[node name="explosion3" type="GPUParticles3D" parent="." unique_id=1602418500]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.199688, 3.2738757, 48.41124)
+cast_shadow = 0
+emitting = false
+amount = 500
+lifetime = 2.5
+one_shot = true
+explosiveness = 1.0
+visibility_aabb = AABB(-4, -37.01, -4, 8, 50, 8)
+trail_enabled = true
+process_material = ExtResource("3_tmtfk")
+draw_pass_1 = SubResource("RibbonTrailMesh_8uh7m")
+script = ExtResource("2_edwlx")
+
+[node name="explosion4" type="GPUParticles3D" parent="." unique_id=978636462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6718388, 8.5300865, -17.246895)
+cast_shadow = 0
+emitting = false
+amount = 500
+lifetime = 2.5
+one_shot = true
+explosiveness = 1.0
+visibility_aabb = AABB(-10, -12, -10, 20, 25, 20)
+trail_enabled = true
+process_material = ExtResource("3_tmtfk")
+draw_pass_1 = SubResource("RibbonTrailMesh_8uh7m")
+script = ExtResource("2_edwlx")
