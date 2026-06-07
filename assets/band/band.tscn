@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://nvwqcht80xu2"]
+
+[ext_resource type="PackedScene" uid="uid://dwa21ti2hdkox" path="res://assets/band/guitar.tscn" id="1_fgmus"]
+[ext_resource type="PackedScene" uid="uid://bghm6d82d8kcj" path="res://assets/band/drumkit.tscn" id="1_vqq0h"]
+[ext_resource type="PackedScene" uid="uid://b8coth6ifh033" path="res://assets/band/piano.tscn" id="3_h140d"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_g6dqo"]
+radius = 0.4
+height = 1.7
+
+[node name="Band" type="Node3D" unique_id=1637334112]
+
+[node name="drums" type="MeshInstance3D" parent="." unique_id=1723845741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.032845)
+mesh = SubResource("CapsuleMesh_g6dqo")
+
+[node name="Drumkit" parent="drums" unique_id=1572261631 instance=ExtResource("1_vqq0h")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.1259956, 0, 0.07447386)
+
+[node name="guitar" type="MeshInstance3D" parent="." unique_id=735719365]
+mesh = SubResource("CapsuleMesh_g6dqo")
+
+[node name="Guitar" parent="guitar" unique_id=1328109227 instance=ExtResource("1_fgmus")]
+transform = Transform3D(-4.371139e-08, 1, 0, -0.93394274, -4.0823934e-08, -0.3574227, -0.3574227, -1.5623442e-08, 0.93394274, 0.46152222, 0, 0)
+
+[node name="keys" type="MeshInstance3D" parent="." unique_id=114950014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.301116)
+mesh = SubResource("CapsuleMesh_g6dqo")
+
+[node name="Piano" parent="keys" unique_id=294561073 instance=ExtResource("3_h140d")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.57381916, 0, 0)

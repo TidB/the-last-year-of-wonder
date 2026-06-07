@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bghm6d82d8kcj"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_bnehg"]
+top_radius = 0.28
+bottom_radius = 0.28
+height = 0.4
+radial_segments = 24
+rings = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yvvd0"]
+top_radius = 0.2
+bottom_radius = 0.2
+height = 0.4
+radial_segments = 24
+rings = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0jsxh"]
+top_radius = 0.18
+bottom_radius = 0.18
+height = 0.14
+radial_segments = 24
+rings = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_c4ngl"]
+top_radius = 0.12
+bottom_radius = 0.12
+height = 0.14
+radial_segments = 24
+rings = 0
+
+[node name="Drumkit" type="Node3D" unique_id=1572261631]
+
+[node name="bass" type="MeshInstance3D" parent="." unique_id=1555742276]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_bnehg")
+
+[node name="floor_tom" type="MeshInstance3D" parent="." unique_id=359786954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.349527, 0.19705307, -0.50610757)
+mesh = SubResource("CylinderMesh_yvvd0")
+
+[node name="snare" type="MeshInstance3D" parent="." unique_id=647634336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.44310552, 0.19705307, 0.4903742)
+mesh = SubResource("CylinderMesh_0jsxh")
+
+[node name="tom" type="MeshInstance3D" parent="." unique_id=815045782]
+transform = Transform3D(0.915922, 0.4013564, 0, -0.4013564, 0.915922, 0, 0, 0, 1, 0.17492682, 0.5075351, 0.27224255)
+mesh = SubResource("CylinderMesh_c4ngl")
+
+[node name="tom2" type="MeshInstance3D" parent="." unique_id=959544741]
+transform = Transform3D(0.915922, 0.4013564, 0, -0.4013564, 0.915922, 0, 0, 0, 1, 0.17492682, 0.5075351, -0.23437321)
+mesh = SubResource("CylinderMesh_c4ngl")

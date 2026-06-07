@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://hy64kaiihl1w" path="res://actors/Player.tscn" id="5_k7ugr"]
 [ext_resource type="Material" uid="uid://cnphqog33aur" path="res://materials/green.tres" id="6_qalsi"]
 [ext_resource type="Material" uid="uid://bklm0nx8p15yv" path="res://materials/glass.tres" id="7_6nsqa"]
+[ext_resource type="PackedScene" uid="uid://nvwqcht80xu2" path="res://assets/band/band.tscn" id="8_dnipj"]
 [ext_resource type="PackedScene" uid="uid://djowy1a8rcybg" path="res://assets/firework/firework.tscn" id="10_bmuap"]
 [ext_resource type="PackedScene" uid="uid://dc76hbc4fx2mk" path="res://assets/warm_lantern.tscn" id="10_rehnx"]
 [ext_resource type="PackedScene" uid="uid://0rmde1ejgnpx" path="res://demo_scene.tscn" id="11_7imi8"]
@@ -103,6 +104,15 @@ size = Vector3(0.1, 8.465, 10.77)
 [sub_resource type="BoxMesh" id="BoxMesh_1cwmf"]
 material = ExtResource("7_6nsqa")
 size = Vector3(0.1, 4, 24.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dnipj"]
+albedo_color = Color(1, 0, 0.026336193, 1)
+backlight_enabled = true
+backlight = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_36elt"]
+material = SubResource("StandardMaterial3D_dnipj")
+size = Vector3(15.425, 6.85, 0.05)
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_yr24d"]
 
@@ -783,6 +793,34 @@ mesh = SubResource("BoxMesh_jl1yo")
 [node name="GlassWall8" type="MeshInstance3D" parent="Level3Trainstation" unique_id=1125694510]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.14579296, 3.009056, 3.0445137)
 mesh = SubResource("BoxMesh_1cwmf")
+
+[node name="curtain" type="MeshInstance3D" parent="Level3Trainstation" unique_id=10871096]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.837648, -0.72372437, 162.6113)
+mesh = SubResource("BoxMesh_36elt")
+
+[node name="Band" parent="Level3Trainstation/curtain" unique_id=1637334112 instance=ExtResource("8_dnipj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.13891172, -0.65573883, 2.325592)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Level3Trainstation/curtain" unique_id=1022576836]
+transform = Transform3D(0.98864126, -0.03889909, 0.14517345, -2.262668e-08, 0.9659259, 0.2588191, -0.1502946, -0.25587922, 0.95495415, -1.4816436, 1.10952, 8.630432)
+light_energy = 2.0
+shadow_enabled = true
+spot_range = 15.0
+spot_angle = 15.0
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Level3Trainstation/curtain" unique_id=1888986747]
+transform = Transform3D(1, 2.2626681e-08, 2.978858e-09, -2.262668e-08, 0.9659259, 0.25881907, 2.978858e-09, -0.25881907, 0.9659258, 0.14957404, 1.10952, 8.630432)
+light_energy = 2.0
+shadow_enabled = true
+spot_range = 15.0
+spot_angle = 12.0
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Level3Trainstation/curtain" unique_id=606503069]
+transform = Transform3D(0.9896739, 0.037098415, -0.13845307, -2.262668e-08, 0.9659259, 0.2588191, 0.14333716, -0.2561465, 0.95595163, 1.9355692, 1.10952, 8.630432)
+light_energy = 2.0
+shadow_enabled = true
+spot_range = 15.0
+spot_angle = 15.0
 
 [node name="Level4Trainplatforms" parent="." unique_id=1589141337 instance=ExtResource("4_oblqs")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9590759, 36.501484, -47.278584)
