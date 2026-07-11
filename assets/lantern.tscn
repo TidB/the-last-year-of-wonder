@@ -16,8 +16,8 @@ emission_energy_multiplier = 2.0
 material = SubResource("StandardMaterial3D_kwwfp")
 radius = 0.2
 height = 0.2
-radial_segments = 10
-rings = 10
+radial_segments = 8
+rings = 4
 
 [node name="Lantern" type="Node3D" unique_id=1331957748]
 

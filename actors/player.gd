@@ -121,7 +121,7 @@ func _input(event):
 			
 func process_interaction():
 	if highlighted_obj:
-		highlighted_obj.use(self.inventory.get(self.selected_inv_item) if self.inv_visible else null)
+		highlighted_obj.use()
 
 		# TODO: Does this make sense? It's currently a hack to allow advancing descriptions, but if there's ever
 		# an object like a button that you can press multiple times, this doesn't make sense

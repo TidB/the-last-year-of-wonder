@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d0guuy76h27t2"]
+
+[ext_resource type="Script" uid="uid://clu14vlb2v36d" path="res://interactable/take_train.gd" id="1_sdsj6"]
+
+[node name="TakeTrain" type="StaticBody3D" unique_id=424866069]
+collision_layer = 3
+script = ExtResource("1_sdsj6")

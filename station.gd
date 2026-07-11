@@ -1,6 +1,10 @@
 extends Node3D
 
 func _ready():
+	var interactables = get_tree().get_nodes_in_group(Global.INTERACTABLE_GROUP)
+	for i in interactables:
+		init_interactable(i)
+	
 	var dialogues = get_tree().get_nodes_in_group(Global.DIALOGUE_GROUP)
 	for d in dialogues:
 		d.set_player(%Player)  # TODO: At some point, we might switch to signals
@@ -8,6 +12,10 @@ func _ready():
 	
 func _process(_delta):
 	get_tree().call_group("npc", "look_at_player", %Player.position)
+
+func init_interactable(interactable):
+	interactable.show_hint.connect(%UI._on_show_hint)
+	interactable.hide_hint.connect(%UI._on_hide_hint)
 
 func export():
 	var gltf_document_save := GLTFDocument.new()

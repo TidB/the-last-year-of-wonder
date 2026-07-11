@@ -11,6 +11,8 @@ emission_energy_multiplier = 2.0
 material = SubResource("StandardMaterial3D_1r3e6")
 radius = 0.2
 height = 0.2
+radial_segments = 8
+rings = 4
 
 [node name="Lantern" unique_id=1331957748 instance=ExtResource("1_1r3e6")]
 
