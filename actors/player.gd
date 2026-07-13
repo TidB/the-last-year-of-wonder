@@ -11,7 +11,10 @@ var direction = Vector3.ZERO
 var camera
 var rotation_helper
 
+const HOLD_FOR_SECONDS_TO_USE = 2.5
+var current_hold_time = 0
 var highlighted_obj
+signal set_distortion(ratio)
 
 var current_dialogue = null
 
@@ -44,7 +47,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
-	process_input(delta)
+	process_continuous_input(delta)
 	process_movement(delta)
 	process_aim()
 
@@ -76,13 +79,19 @@ func process_movement(delta):
 	# TODO: Little cute bounce when landing on the ground?
 	move_and_slide()
 
-func process_input(_delta):
-	if Input.is_action_just_pressed("ui_cancel"):
-		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			
+func process_continuous_input(delta):
+	if Input.is_action_pressed("interact") and highlighted_obj:
+		current_hold_time += delta
+		print(current_hold_time)
+		if current_hold_time >= HOLD_FOR_SECONDS_TO_USE:
+			highlighted_obj.remove_highlight()
+			current_hold_time = 0
+			highlighted_obj.use()
+			highlighted_obj = null
+	else:
+		current_hold_time = 0
+	
+	set_distortion.emit((current_hold_time / HOLD_FOR_SECONDS_TO_USE) ** 2)
 
 func process_aim():
 	var size = get_viewport().size
@@ -115,9 +124,15 @@ func _input(event):
 		var camera_rot = rotation_helper.rotation
 		camera_rot.x = deg_to_rad(clamp(rad_to_deg(camera_rot.x), -80, 80))
 		rotation_helper.rotation = camera_rot
+	elif event.is_action_pressed("ui_cancel"):  # TODO: Stop processing during pause
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	elif event.is_action_pressed("interact"):
-		process_interaction()
-		update_highlight()
+		process_speech()
+		#process_interaction()
+		#update_highlight()
 			
 func process_interaction():
 	if highlighted_obj:

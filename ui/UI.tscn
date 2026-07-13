@@ -2,7 +2,10 @@
 
 [ext_resource type="Script" uid="uid://dv408l4hww1wr" path="res://ui/ui.gd" id="1_xmm75"]
 
+[sub_resource type="FontVariation" id="FontVariation_xmm75"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_xmm75"]
+font = SubResource("FontVariation_xmm75")
 font_size = 35
 shadow_size = 3
 shadow_color = Color(0, 0, 0, 0.44705883)
@@ -27,6 +30,7 @@ grow_vertical = 2
 [node name="Hint" type="Label" parent="CenterContainer" unique_id=751516230]
 custom_minimum_size = Vector2(400, 200)
 layout_mode = 2
+text = "Test"
 label_settings = SubResource("LabelSettings_xmm75")
 horizontal_alignment = 1
 vertical_alignment = 1

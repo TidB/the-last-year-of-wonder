@@ -841,6 +841,8 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9
 
 [node name="TakeTrain1" parent="Level4Trainplatforms" unique_id=424866069 instance=ExtResource("10_dnipj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.8822, 3.1766853, -2.861023e-06)
+id = "train1"
+label = "Take Train from Platform 1"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Level4Trainplatforms/TakeTrain1" unique_id=379839105]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3153, -0.92650604, 0)

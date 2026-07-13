@@ -10,6 +10,8 @@ func _ready():
 		d.set_player(%Player)  # TODO: At some point, we might switch to signals
 	#export()
 	
+	%Player.set_distortion.connect(%UI._on_set_distortion)
+	
 func _process(_delta):
 	get_tree().call_group("npc", "look_at_player", %Player.position)
 
