@@ -113,7 +113,7 @@ backlight = Color(1, 1, 1, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_36elt"]
 material = SubResource("StandardMaterial3D_dnipj")
-size = Vector3(15.425, 6.85, 0.1)
+size = Vector3(18.07, 6.85, 0.1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dnipj"]
 size = Vector3(4, 5, 500)
@@ -837,7 +837,7 @@ spot_range = 15.0
 spot_angle = 15.0
 
 [node name="Level4Trainplatforms" parent="." unique_id=1589141337 instance=ExtResource("4_oblqs")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9590759, 36.501484, -47.278584)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9651871, 36.51481, -47.285156)
 
 [node name="TakeTrain1" parent="Level4Trainplatforms" unique_id=424866069 instance=ExtResource("10_dnipj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.8822, 3.1766853, -2.861023e-06)
@@ -1533,3 +1533,13 @@ dialogue_name = "0_intro/greeting"
 
 [node name="UI" parent="." unique_id=899202444 instance=ExtResource("20_vjagt")]
 unique_name_in_owner = true
+
+[node name="Dialogue2" parent="." unique_id=9560499 instance=ExtResource("18_jl1yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.05043, 37.55307, 8.823084)
+dialogue_name = "0_intro/double"
+
+[node name="Npc" parent="Dialogue2" unique_id=1051729567 instance=ExtResource("17_7k7pn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="other" parent="Dialogue2" unique_id=569345002 instance=ExtResource("17_7k7pn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)

@@ -111,6 +111,11 @@ func interact():
 func write_other(alias, line):
 	self.others[alias].write_line(line)
 	
+func clear_all_others_except(alias = null):
+	for other in self.others:
+		if alias != other:
+			self.others[other].clear_line()
+
 func clear_other(alias):
 	if alias == null:
 		for other in self.others.values():

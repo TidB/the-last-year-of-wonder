@@ -82,7 +82,6 @@ func process_movement(delta):
 func process_continuous_input(delta):
 	if Input.is_action_pressed("interact") and highlighted_obj:
 		current_hold_time += delta
-		print(current_hold_time)
 		if current_hold_time >= HOLD_FOR_SECONDS_TO_USE:
 			highlighted_obj.remove_highlight()
 			current_hold_time = 0
@@ -165,11 +164,12 @@ func process_speech():
 		var line = self.current_dialogue.get_current_line() # TODO: advancing the line should happen separately
 		if line == null:
 			self.ui_clear_line.emit()
-			self.current_dialogue.clear_other(null)
+			self.current_dialogue.clear_all_others_except()
 		elif line['action'] == self.current_dialogue.Action.PLAYER:
 			self.ui_write_line.emit(line['line'])
-			self.current_dialogue.clear_other(line['speaker'])
+			self.current_dialogue.clear_all_others_except(line['speaker'])
 		elif line['action'] == self.current_dialogue.Action.OTHER:
+			self.current_dialogue.clear_all_others_except(line['speaker'])
 			self.current_dialogue.write_other(line['speaker'], line['line'])
 			self.ui_clear_line.emit()
 			

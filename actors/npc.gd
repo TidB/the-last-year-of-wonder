@@ -5,6 +5,7 @@ extends Node3D
 func _ready():
 	add_to_group(Global.NPC_GROUP)
 	$Helper.visible = false
+	$Helper/Dialogue.text = ""
 	
 func write_line(text):
 	$Helper/Dialogue.text = text
