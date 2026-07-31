@@ -1531,6 +1531,12 @@ dialogue_name = "0_intro/greeting"
 
 [node name="Npc" parent="Dialogue" unique_id=74501770 instance=ExtResource("17_7k7pn")]
 
+[node name="Dialogue3" parent="." unique_id=1625107672 instance=ExtResource("18_jl1yo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.77109, 37.851482, 10.656864)
+dialogue_name = "0_intro/use_tutorial"
+
+[node name="Npc" parent="Dialogue3" unique_id=380676258 instance=ExtResource("17_7k7pn")]
+
 [node name="UI" parent="." unique_id=899202444 instance=ExtResource("20_vjagt")]
 unique_name_in_owner = true
 

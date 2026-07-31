@@ -1,3 +1,4 @@
+/
 n You've been looking out at the Ferris Wheel for quite some time.
 n Unfortunate timing though.
 n The entire station's closed, can't go out.

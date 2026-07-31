@@ -1,5 +1,16 @@
+/
 n Test
 o Test2
 n Test3
 n Test4
 o Test5
+
+/
+n This is what happens when we're repeating
+o Sounds kinda bad
+n It is
+
+/
+o After this, we're entering random mode
+n Sounds scary!
+o It is

@@ -11,6 +11,8 @@ const COLORS = [
 ]
 var current_color = 0
 
+const SOLUTION_PATTERN = []
+
 func _ready():
 	self.explosions = self.get_children()
 	
