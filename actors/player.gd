@@ -45,6 +45,7 @@ func _ready():
 	rotation_helper = $RotationHelper
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	print(get_viewport().get_final_transform())
 
 func _physics_process(delta):
 	process_continuous_input(delta)
@@ -93,14 +94,21 @@ func process_continuous_input(delta):
 	set_distortion.emit((current_hold_time / HOLD_FOR_SECONDS_TO_USE) ** 2)
 
 func process_aim():
+	process_aim_interactable()
+	# process_aim_drummer()
+	
+func cast_ray_from_player(length, bitmask):
 	var size = get_viewport().size
 	var from = $RotationHelper/Camera.project_ray_origin(size / 2)
-	var to = from + $RotationHelper/Camera.project_ray_normal(size / 2) * 2.0
+	var to = from + $RotationHelper/Camera.project_ray_normal(size / 2) * length
 	
-	# TODO: Replace this with the collisionobject3d's input event as mentionedin the docs?
 	var space_state = get_world_3d().direct_space_state
-	var params = PhysicsRayQueryParameters3D.create(from, to, 0b11)
-	var result = space_state.intersect_ray(params)
+	var params = PhysicsRayQueryParameters3D.create(from, to, bitmask)
+	return space_state.intersect_ray(params)
+			
+func process_aim_interactable():
+	# TODO: Replace this with the collisionobject3d's input event as mentioned in the docs?
+	var result = cast_ray_from_player(2.0, 0b11)
 	
 	if result and result["collider"] and result["collider"].collision_layer != 0b1:
 		if result["collider"] != highlighted_obj:
@@ -115,8 +123,18 @@ func process_aim():
 			highlighted_obj.remove_highlight()
 			highlighted_obj = null
 
+func process_aim_drummer():
+	var result = cast_ray_from_player(1000.0, 0b10000)
+	
+	if result and result["collider"]:
+		print(result["collider"])
+
+# TODO: Sensitivity 'changes' with different window sizes!
+# 		Maybe the input 'thinks' it's still in a smaller window size; because the raycasts also
+#		seem to get processed in a smaller window now, e. g. not covering the middle of the screen
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		print(event.relative.x, event.relative.y)
 		rotation_helper.rotate_x(deg_to_rad(event.relative.y * MOUSE_SENSITIVITY * -1))
 		self.rotate_y(deg_to_rad(event.relative.x * MOUSE_SENSITIVITY * -1))
 
@@ -162,9 +180,11 @@ func process_speech():
 			self.speech_state = State.EndDescription
 	elif self.current_dialogue:
 		var line = self.current_dialogue.get_current_line() # TODO: advancing the line should happen separately
-		if line == null:
+		if line == null:  # Convo is over
 			self.ui_clear_line.emit()
 			self.current_dialogue.clear_all_others_except()
+			self.speech_state = State.Nothing
+			self.current_dialogue = null
 		elif line['action'] == self.current_dialogue.Action.PLAYER:
 			self.ui_write_line.emit(line['line'])
 			self.current_dialogue.clear_all_others_except(line['speaker'])

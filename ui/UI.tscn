@@ -37,3 +37,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 uppercase = true
 max_lines_visible = 2
+
+[node name="ColorRect" type="ColorRect" parent="CenterContainer" unique_id=438617769]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2

@@ -15,6 +15,7 @@ var current_line_no = 0
 var current_convo_id = null
 var start_playing_random = false
 var last_played_convo_id = null
+var shuffled_ids = null
 
 signal advance
 signal show(text)
@@ -123,17 +124,18 @@ func _get_next_convo_id():
 				return random_except()
 			else:
 				return self.current_convo_id + 1
-				
-func random_except():  # We don't wanna randomly select the same convo twice in a row
-	while true:
-		var idx = self.rng.randi_range(0, len(self.dialogue)-1)
-		if (len(self.dialogue) < 2) or (idx != self.last_played_convo_id):
-			return idx
 
-# TODO: Currently, the convo ends, no text is shown, but the player can still click through the invisible dialogue
-# Variant 1: The player has to step out of the dialogue to continue
-# Variant 2: The next convo can happen directly after
-# => Var 1 feels better
+func random_except():  # We don't wanna randomly select the same convo twice in a row
+	if not self.shuffled_ids:
+		self.shuffled_ids = range(len(self.dialogue))
+		
+		while len(self.shuffled_ids) > 1:
+			self.shuffled_ids.shuffle()
+			if self.shuffled_ids[0] != self.last_played_convo_id:
+				break
+	
+	return self.shuffled_ids.pop_front()
+
 func interact():
 	#print("interacted with!!")
 	if self.overlaps_body(player):

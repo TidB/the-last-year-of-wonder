@@ -11,6 +11,7 @@
 [ext_resource type="Material" uid="uid://cnphqog33aur" path="res://materials/green.tres" id="6_qalsi"]
 [ext_resource type="Material" uid="uid://bklm0nx8p15yv" path="res://materials/glass.tres" id="7_6nsqa"]
 [ext_resource type="PackedScene" uid="uid://nvwqcht80xu2" path="res://assets/band/band.tscn" id="8_dnipj"]
+[ext_resource type="Script" uid="uid://cd2p2p1ywhkea" path="res://drumtrigger.gd" id="9_iljnl"]
 [ext_resource type="PackedScene" uid="uid://djowy1a8rcybg" path="res://assets/firework/firework.tscn" id="10_bmuap"]
 [ext_resource type="PackedScene" uid="uid://d0guuy76h27t2" path="res://interactable/take_train.tscn" id="10_dnipj"]
 [ext_resource type="PackedScene" uid="uid://dc76hbc4fx2mk" path="res://assets/warm_lantern.tscn" id="10_rehnx"]
@@ -114,6 +115,9 @@ backlight = Color(1, 1, 1, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_36elt"]
 material = SubResource("StandardMaterial3D_dnipj")
 size = Vector3(18.07, 6.85, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f8dx3"]
+size = Vector3(2.255, 3.465, 1.805)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dnipj"]
 size = Vector3(4, 5, 500)
@@ -836,6 +840,15 @@ shadow_enabled = true
 spot_range = 15.0
 spot_angle = 15.0
 
+[node name="drumtrigger" type="StaticBody3D" parent="Level3Trainstation/curtain" unique_id=1974859267]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18464518, -1.1245747, -0.30070496)
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("9_iljnl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Level3Trainstation/curtain/drumtrigger" unique_id=1786092645]
+shape = SubResource("BoxShape3D_f8dx3")
+
 [node name="Level4Trainplatforms" parent="." unique_id=1589141337 instance=ExtResource("4_oblqs")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.9651871, 36.51481, -47.285156)
 
@@ -1101,6 +1114,7 @@ size = Vector3(130, 16, 20)
 
 [node name="lanterns" type="Node3D" parent="outside" unique_id=89243147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.0865402, -15.181717)
+visible = false
 
 [node name="Lantern2" parent="outside/lanterns" unique_id=1999189380 instance=ExtResource("10_rehnx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.275974, 0, 0)

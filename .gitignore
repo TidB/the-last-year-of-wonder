@@ -1,5 +1,7 @@
 lightmaps/
-posters/
+posters/*.import
+posters/*.png
+posters/*.jpg
 
 # Godot 4+ specific ignores
 .godot/
@@ -21,3 +23,5 @@ data_*/
 mono_crash.*.json
 
 *.glb
+
+*.tmp
