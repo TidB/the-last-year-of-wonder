@@ -709,7 +709,7 @@ use_collision = true
 size = Vector3(228.92444, 1, 336.5598)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Level3Trainstation" unique_id=304806074]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.512819, -4.074629, 267.54483)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.513, -3.81, 267.545)
 use_collision = true
 size = Vector3(305.68597, 1, 239.81445)
 
@@ -1106,6 +1106,18 @@ size = Vector3(45.56, 20, 20)
 
 [node name="building29" type="CSGBox3D" parent="outside" unique_id=1884757388]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 49.054085, 4.591076, 239.54794)
+size = Vector3(130, 16, 20)
+
+[node name="building43" type="CSGBox3D" parent="outside" unique_id=220708895]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 81.99691, 4.591076, 296.45514)
+size = Vector3(50, 16, 20)
+
+[node name="building44" type="CSGBox3D" parent="outside" unique_id=1437437631]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 129.27875, 6.470394, 296.45514)
+size = Vector3(45.56, 20, 20)
+
+[node name="building45" type="CSGBox3D" parent="outside" unique_id=1454813817]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 161.78798, 4.591076, 241.63321)
 size = Vector3(130, 16, 20)
 
 [node name="building31" type="CSGBox3D" parent="outside" unique_id=1449100895]
@@ -1533,6 +1545,10 @@ size = Vector3(89.908905, 31.177734, 20)
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="outside_inaccessible" unique_id=94537240]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 340.8263, 79.99644, -123.673386)
+mesh = SubResource("BoxMesh_atg86")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="outside_inaccessible" unique_id=1630932983]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 163.17886, 79.996445, 237.83943)
 mesh = SubResource("BoxMesh_atg86")
 
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="outside_inaccessible" unique_id=1171008773]

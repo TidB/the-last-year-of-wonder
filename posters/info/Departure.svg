@@ -27,14 +27,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1"
-     inkscape:cx="378"
-     inkscape:cy="227"
-     inkscape:window-width="1918"
-     inkscape:window-height="2080"
-     inkscape:window-x="3833"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="16"
+     inkscape:cx="62.09375"
+     inkscape:cy="55.71875"
+     inkscape:window-width="3840"
+     inkscape:window-height="2089"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg1"
      showgrid="false"
      inkscape:export-bgcolor="#ffffffff">
@@ -308,15 +308,15 @@
        style="font-weight:bold;font-size:2.82223px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre-wrap;shape-inside:url(#path4);display:none"><tspan
          x="11.880494"
          y="4.0672015"
-         id="tspan5">Metro GmbH
+         id="tspan1">Metro GmbH
 </tspan><tspan
          x="13.917848"
          y="7.5949892"
-         id="tspan7">MPleicherwall 19
+         id="tspan3">MPleicherwall 19
 </tspan><tspan
          x="15.955203"
          y="11.122777"
-         id="tspan8">G-335 Hame
+         id="tspan4">G-335 Hame
 </tspan></text>
     <text
        xml:space="preserve"
@@ -587,19 +587,6 @@
      y="5.3813415" />
   <path
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.98621;stroke-dasharray:none;stroke-opacity:1"
-     id="path203"
-     sodipodi:type="arc"
-     sodipodi:cx="12.48533"
-     sodipodi:cy="-28.030931"
-     sodipodi:rx="4.8456564"
-     sodipodi:ry="4.8456564"
-     sodipodi:start="3.1415927"
-     sodipodi:end="6.2831853"
-     sodipodi:arc-type="slice"
-     d="m 7.6396732,-28.030931 a 4.8456564,4.8456564 0 0 1 4.8456568,-4.845657 4.8456564,4.8456564 0 0 1 4.845656,4.845657 H 12.48533 Z"
-     transform="rotate(90)" />
-  <path
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.98621;stroke-dasharray:none;stroke-opacity:1"
      id="path204"
      sodipodi:type="arc"
      sodipodi:cx="-12.535538"
@@ -689,19 +676,6 @@
      x="45.166458"
      y="7.6396742" />
   <path
-     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.98621;stroke-dasharray:none;stroke-opacity:1"
-     id="path211"
-     sodipodi:type="arc"
-     sodipodi:cx="-12.48533"
-     sodipodi:cy="28.030931"
-     sodipodi:rx="4.8456564"
-     sodipodi:ry="4.8456564"
-     sodipodi:start="3.1415927"
-     sodipodi:end="6.2831853"
-     sodipodi:arc-type="slice"
-     d="m -17.330986,28.030931 a 4.8456564,4.8456564 0 0 1 4.845656,-4.845656 4.8456564,4.8456564 0 0 1 4.8456568,4.845656 H -12.48533 Z"
-     transform="rotate(-90)" />
-  <path
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.3932;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
      id="path212"
      d="m 41.086571,23.959221 a 8.1601362,8.1597738 0 0 1 -7.066885,-4.079887 8.1601362,8.1597738 0 0 1 -10e-7,-8.159774 8.1601362,8.1597738 0 0 1 7.066886,-4.0798868 v 8.1597738 z"
@@ -743,4 +717,10 @@
      x="-23.959223"
      y="41.086571"
      transform="rotate(-90)" />
+  <circle
+     style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linejoin:bevel"
+     id="path1"
+     cx="28.030931"
+     cy="12.485325"
+     r="4.8456516" />
 </svg>

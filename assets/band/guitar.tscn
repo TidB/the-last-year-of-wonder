@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dwa21ti2hdkox"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_lctl5"]
-size = Vector3(0.4, 0.1, 0.5)
+size = Vector3(0.4, 0.1, 0.7)
 
 [sub_resource type="BoxMesh" id="BoxMesh_w3rxx"]
 size = Vector3(0.06, 0.1, 0.5)
@@ -9,6 +9,7 @@ size = Vector3(0.06, 0.1, 0.5)
 [node name="Guitar" type="Node3D" unique_id=1328109227]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1113158746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.09176004)
 mesh = SubResource("BoxMesh_lctl5")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1489879045]

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="139mm"
+   viewBox="0 0 297 139"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="platform-screen.svg"
+   inkscape:export-filename="platform-screen.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#3c6cd2"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.6810396"
+     inkscape:cx="509.80358"
+     inkscape:cy="225.15829"
+     inkscape:window-width="3840"
+     inkscape:window-height="2089"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#3c6cd2ff">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.26458334"
+       spacingy="0.26458334"
+       empcolor="#3f3fff"
+       empopacity="0.25098039"
+       color="#3f3fff"
+       opacity="0.1254902"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="15"
+       y="135"
+       width="210.00001"
+       height="93.824144"
+       id="rect10" />
+    <linearGradient
+       id="linearGradient8"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop9" />
+    </linearGradient>
+    <rect
+       x="25.000001"
+       y="270.00001"
+       width="1080"
+       height="255.00001"
+       id="rect8" />
+    <rect
+       x="340.00001"
+       y="285.00001"
+       width="830.85896"
+       height="89.212097"
+       id="rect7" />
+    <rect
+       x="290.00001"
+       y="15"
+       width="834.60007"
+       height="124.72004"
+       id="rect6" />
+    <rect
+       x="140"
+       y="220"
+       width="210.00002"
+       height="135.00001"
+       id="rect4" />
+    <rect
+       x="0"
+       y="0"
+       width="1122.5197"
+       height="140"
+       id="rect3" />
+    <rect
+       x="0"
+       y="0"
+       width="646.84262"
+       height="126.51515"
+       id="rect2" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8"
+       id="linearGradient9"
+       x1="26.859376"
+       y1="357.54543"
+       x2="729.44826"
+       y2="357.54543"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linejoin:bevel"
+       id="rect1"
+       width="2.6567104"
+       height="297"
+       x="71.4375"
+       y="-297"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.0598099;stroke-linejoin:bevel"
+       id="rect5"
+       width="58.208336"
+       height="21.166666"
+       x="7.9375005"
+       y="7.937501" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-27.119791,-55.562502)"
+       id="text1"
+       style="font-style:italic;font-size:114.667px;line-height:1.25;font-family:Amiri;-inkscape-font-specification:'Amiri, Italic';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4);display:inline"><tspan
+         x="140"
+         y="307.59285"
+         id="tspan15"><tspan
+           style="font-style:normal;font-weight:bold;font-size:80px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';fill:#3c6cd2"
+           id="tspan12">23:06</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.2170921,-1.2488438)"
+       id="text5"
+       style="font-weight:bold;font-size:106.667px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect6);display:inline"><tspan
+         x="290"
+         y="112.05366"
+         id="tspan17"><tspan
+           style="font-family:Sans;-inkscape-font-specification:'Sans, Bold';fill:#ffffff"
+           id="tspan16">RT56: Augsburg</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-16.445495,-35.407635)"
+       id="text6"
+       style="font-weight:bold;font-size:32px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect7);display:inline;fill:#ffffff;fill-opacity:1"><tspan
+         x="340"
+         y="313.82414"
+         id="tspan18">Capanema - Yecla - Pagar Alam - Newtonbrook - Aoxi - </tspan><tspan
+         x="340"
+         y="353.82414"
+         id="tspan19">Oak Park - Bilasipara - M'Bahiakro - Itabashi - Seeheim</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,0.90123732,3.5326442)"
+       id="text8"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect8);display:inline;fill:#ffffff;fill-opacity:1"><tspan
+         x="25"
+         y="327.64828"
+         id="tspan20">23:55    RT33: Kassel
+</tspan><tspan
+         x="25"
+         y="407.64828"
+         id="tspan21">00:03    RX01: Plateau
+</tspan><tspan
+         x="25"
+         y="487.64828"
+         id="tspan22">00:15    EE1:   /</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linejoin:bevel"
+       id="rect9"
+       width="1.2401736"
+       height="297"
+       x="94.629929"
+       y="-297"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,8.8414942,8.2165693)"
+       id="text9"
+       style="font-weight:bold;font-size:21.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10);display:inline"><tspan
+         x="15"
+         y="154.21606"
+         id="tspan24"><tspan
+           style="fill:#ffffff"
+           id="tspan23">No toilet
+</tspan></tspan><tspan
+         x="15"
+         y="180.88269"
+         id="tspan26"><tspan
+           style="fill:#ffffff"
+           id="tspan25">No food service</tspan></tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linejoin:bevel"
+       id="rect11"
+       width="1.2401736"
+       height="297"
+       x="115.79659"
+       y="-297"
+       transform="rotate(90)" />
+  </g>
+</svg>
