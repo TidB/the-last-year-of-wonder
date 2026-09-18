@@ -79,4 +79,6 @@ interact={
 rendering_device/driver.windows="d3d12"
 anti_aliasing/quality/msaa_3d=1
 anti_aliasing/quality/use_debanding=true
+scaling_3d/mode=1
+scaling_3d/scale=0.81
 anti_aliasing/quality/screen_space_aa=1

@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
    sodipodi:docname="Departure.svg"
-   inkscape:export-filename="PSA.png"
+   inkscape:export-filename="C:\Users\TidB\PSA.png"
    inkscape:export-xdpi="120"
    inkscape:export-ydpi="120"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,15 +27,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="16"
-     inkscape:cx="62.09375"
-     inkscape:cy="55.71875"
+     inkscape:zoom="2"
+     inkscape:cx="276.75"
+     inkscape:cy="388.25"
      inkscape:window-width="3840"
      inkscape:window-height="2089"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:export-bgcolor="#ffffffff">
     <inkscape:grid
@@ -55,6 +55,30 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <rect
+       x="167.5"
+       y="889.5"
+       width="333.5"
+       height="48"
+       id="rect20" />
+    <rect
+       x="113.84419"
+       y="169"
+       width="138.65581"
+       height="34.5"
+       id="rect19" />
+    <rect
+       x="82.092837"
+       y="172.21164"
+       width="164.40716"
+       height="43.809484"
+       id="rect18" />
+    <rect
+       x="133.89793"
+       y="155.88715"
+       width="224.60207"
+       height="40.36285"
+       id="rect17" />
     <linearGradient
        id="swatch44"
        inkscape:swatch="solid">
@@ -308,15 +332,15 @@
        style="font-weight:bold;font-size:2.82223px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre-wrap;shape-inside:url(#path4);display:none"><tspan
          x="11.880494"
          y="4.0672015"
-         id="tspan1">Metro GmbH
+         id="tspan5">Metro GmbH
 </tspan><tspan
          x="13.917848"
          y="7.5949892"
-         id="tspan3">MPleicherwall 19
+         id="tspan7">MPleicherwall 19
 </tspan><tspan
          x="15.955203"
          y="11.122777"
-         id="tspan4">G-335 Hame
+         id="tspan8">G-335 Hame
 </tspan></text>
     <text
        xml:space="preserve"
@@ -483,19 +507,6 @@
        d="M 30.121275,30.495451 V 261.36287"
        id="path18" />
     <circle
-       style="fill:url(#linearGradient23);fill-opacity:1;fill-rule:nonzero;stroke-width:0.448876;stroke-dasharray:none"
-       id="path23"
-       cx="30.121275"
-       cy="48.315651"
-       r="8.8399391" />
-    <rect
-       style="fill:url(#linearGradient24);fill-opacity:1;fill-rule:nonzero;stroke-width:0.588119;stroke-dasharray:none"
-       id="rect23"
-       width="131.71042"
-       height="17.679878"
-       x="30.121275"
-       y="39.475712" />
-    <circle
        style="fill:url(#linearGradient28);fill-opacity:1;fill-rule:nonzero;stroke-width:0.665001;stroke-dasharray:none"
        id="circle25"
        cx="30.121275"
@@ -571,12 +582,28 @@
        height="26.192413"
        x="30.121275"
        y="194.94638" />
-    <circle
-       style="fill:url(#linearGradient47);fill-opacity:1;fill-rule:nonzero;stroke-width:0.448876;stroke-dasharray:none"
-       id="circle46"
-       cx="161.8317"
-       cy="48.315651"
-       r="8.8399391" />
+    <g
+       id="g17">
+      <circle
+         style="fill:url(#linearGradient23);fill-opacity:1;fill-rule:nonzero;stroke-width:0.448876;stroke-dasharray:none"
+         id="path23"
+         cx="30.121275"
+         cy="48.315651"
+         r="8.8399391" />
+      <rect
+         style="fill:url(#linearGradient24);fill-opacity:1;fill-rule:nonzero;stroke-width:0.588119;stroke-dasharray:none"
+         id="rect23"
+         width="131.71042"
+         height="17.679878"
+         x="30.121275"
+         y="39.475712" />
+      <circle
+         style="fill:url(#linearGradient47);fill-opacity:1;fill-rule:nonzero;stroke-width:0.448876;stroke-dasharray:none"
+         id="circle46"
+         cx="161.8317"
+         cy="48.315651"
+         r="8.8399391" />
+    </g>
   </g>
   <rect
      style="display:inline;fill:#e41c1c;fill-opacity:1;stroke:none;stroke-width:0.704152;stroke-dasharray:none;stroke-opacity:1"
@@ -611,6 +638,14 @@
      sodipodi:arc-type="slice"
      d="m 14.297093,-17.50985 a 4.8456564,4.8456564 0 0 1 4.845657,-4.845656 4.8456564,4.8456564 0 0 1 4.845656,4.845656 H 19.14275 Z"
      transform="rotate(90)" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.0305998;stroke-linejoin:bevel"
+     id="rect6-1"
+     width="0.39687651"
+     height="3.0842583"
+     x="-17.708288"
+     y="14.297093"
+     transform="scale(-1,1)" />
   <path
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.98621;stroke-dasharray:none;stroke-opacity:1"
      id="path206"
@@ -703,6 +738,13 @@
      y="41.086571"
      transform="rotate(-90)" />
   <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.0328036;stroke-linejoin:bevel"
+     id="rect6-2"
+     width="0.34479624"
+     height="4.079886"
+     x="40.914173"
+     y="7.6396737" />
+  <rect
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.82401;stroke-dasharray:none;stroke-opacity:1"
      id="rect213"
      width="4.0798855"
@@ -717,10 +759,49 @@
      x="-23.959223"
      y="41.086571"
      transform="rotate(-90)" />
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.0339097;stroke-linejoin:bevel"
+     id="rect6-9"
+     width="0.36844051"
+     height="4.0798845"
+     x="40.902351"
+     y="19.879335" />
   <circle
      style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0499999;stroke-linejoin:bevel"
      id="path1"
      cx="28.030931"
      cy="12.485325"
      r="4.8456516" />
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,64.399121,2.6458333)"
+     id="text17"
+     style="font-weight:bold;font-size:29.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect17);shape-padding:1.25;display:inline"><tspan
+       x="135.14844"
+       y="183.55882"
+       id="tspan10">÷ˢŽĬ¸čĴș̜ʘ¨|ȴ̴ɇĝ</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,-22.046543,-1.0583333)"
+     id="text18"
+     style="font-weight:bold;font-size:29.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect18);display:inline"><tspan
+       x="82.09375"
+       y="198.63304"
+       id="tspan11">08:23</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="scale(0.26458333)"
+     id="text19"
+     style="font-weight:bold;font-size:29.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect19);display:inline"><tspan
+       x="113.84375"
+       y="195.4221"
+       id="tspan12">RT 56</tspan></text>
+  <text
+     xml:space="preserve"
+     transform="matrix(0.26458333,0,0,0.26458333,-9.525,16.801042)"
+     id="text20"
+     style="font-weight:bold;font-size:29.3333px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect20)"><tspan
+       x="167.5"
+       y="915.9221"
+       id="tspan13">[continues until 00:30]</tspan></text>
 </svg>
