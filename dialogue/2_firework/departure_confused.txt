@@ -1,0 +1,13 @@
+/
+b We have to wait an hour!?
+a Shut it, I'm trying to read this.
+a It's not that complicated, the same trains run every hour.
+a The pattern repeats.
+b There might be earlier trains from other platforms though!
+a You can check, I'm not looking at every of these posters in the station.
+
+/
+a There are worse stations to wait at than this one.
+b I don't get how it's always bustling?
+b All the stores are open, every corner's got people standing walking sitting talking
+a You'd think they'd cool down at night...

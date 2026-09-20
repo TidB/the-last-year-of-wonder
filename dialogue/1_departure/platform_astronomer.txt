@@ -1,0 +1,9 @@
+/
+n I love the city for keeping the area above the old market square clear.
+n Giving us a clear view of Cerpei-5 in the night sky.
+n Beautiful!
+n To be fair, it appears in this exact spot only on the 18th day of the 3rd month after the last harvest moon, but it's the thought that counts!
+n I'd hate to see any kind of large building or structure erected at that spot!
+n The only thing I dislike more than that is light pollution!
+
+# TODO: Reference this callback (callbefore?)

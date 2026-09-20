@@ -1,0 +1,10 @@
+/
+n You seem a little confused
+n Are you at the right station?
+n ...
+n No, you're still at this station.
+n Have you tried getting out at... the station you want?
+
+/
+n I don't think any trains here drive in a loop, maybe back and forth.
+n But they do drive to unexpected places sometimes.

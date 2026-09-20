@@ -1,0 +1,15 @@
+/
+1 Glad nobody was on the Ferris wheel when it caught fire
+2 You think it's arson?
+1 Don't think so. You've seen the mess of cables and plugs and supports there?
+1 Looks like an exploded circuit board.
+2 What a way to go out though, with a view of the city.
+2 The city looks like an intact circuit board from up there.
+
+/
+1 I hope they catch whoever is behind this
+2 Damage is already done
+2 There's always a risk in life
+1 I hate that
+1 When I die, it cannot be somebody else's fault
+1 What a waste that would be
