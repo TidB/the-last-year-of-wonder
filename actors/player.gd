@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@export var camera_only = false
+
 var MOUSE_SENSITIVITY = 0.05
 const JUMP_SPEED = 3.0
 const RUN_SPEED = 15 # Normally: 6.5
@@ -41,6 +43,11 @@ func safe_highlighted_obj_check(obj):
 		return true
 
 func _ready():
+	if not self.visible:
+		self.set_process(false)
+		self.set_process_input(false)
+		return
+	
 	camera = $RotationHelper/Camera
 	rotation_helper = $RotationHelper
 
@@ -49,7 +56,8 @@ func _ready():
 
 func _physics_process(delta):
 	process_continuous_input(delta)
-	process_movement(delta)
+	if not self.camera_only:
+		process_movement(delta)
 	process_aim()
 
 # Taken from https://www.youtube.com/watch?v=xIKErMgJ1Yk

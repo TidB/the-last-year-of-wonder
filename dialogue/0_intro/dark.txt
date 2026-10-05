@@ -1,0 +1,7 @@
+/
+n It's too far away.
+n It's cozy here.
+n I feel safe here.
+n Not safe, but static.
+n I can do no wrong here.
+n I'll stay here.

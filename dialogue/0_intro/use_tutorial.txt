@@ -2,3 +2,8 @@
 n Not sure how to take a train, dear?
 n Here, stand at the platform and keep M1 pressed!
 n Just make sure you're taking the right train!
+
+/
+n I remember the station being this dark, but that was quite a while ago!
+n It was a time when strange things were happening in my life.
+n 

@@ -24,6 +24,10 @@ Global="*uid://xlyop7w452k2"
 
 window/stretch/mode="canvas_items"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 movement_left={

@@ -1,9 +1,9 @@
-[gd_scene format=3 uid="uid://jrp3ygx3xnna"]
+[gd_scene format=3 uid="uid://cutkelc2ax6w0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_offce"]
 emission_enabled = true
 emission = Color(1, 1, 1, 1)
-emission_energy_multiplier = 1.5
+emission_energy_multiplier = 10.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_offce"]
 material = SubResource("StandardMaterial3D_offce")
@@ -16,4 +16,16 @@ rings = 4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=114643560]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+visible = false
 mesh = SubResource("CapsuleMesh_offce")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1937309812]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+radius = 1.0
+height = 2.5
+sides = 16
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCylinder3D" unique_id=765889444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.014533548, -0.63791996)
+operation = 2
+size = Vector3(2, 2.6, 1)

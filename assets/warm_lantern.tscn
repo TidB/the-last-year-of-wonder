@@ -1,14 +1,10 @@
 [gd_scene format=3 uid="uid://dc76hbc4fx2mk"]
 
 [ext_resource type="PackedScene" uid="uid://bkr3561cky0b2" path="res://assets/lantern.tscn" id="1_1r3e6"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1r3e6"]
-emission_enabled = true
-emission = Color(1, 0.7741201, 0.4140625, 1)
-emission_energy_multiplier = 2.0
+[ext_resource type="Material" uid="uid://gkpvi2vqoq3s" path="res://materials/warm-light.tres" id="2_weov6"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_weov6"]
-material = SubResource("StandardMaterial3D_1r3e6")
+material = ExtResource("2_weov6")
 radius = 0.2
 height = 0.2
 radial_segments = 8

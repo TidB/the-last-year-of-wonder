@@ -5,8 +5,8 @@ n The entire station's closed, can't go out.
 n You should come back another time.
 
 /
-n Can't take my eyes off of it either.
-n Like a man-made sunset.
+n Can't blame you, I can't take my eyes off of it either.
+n Like staring into a man-made sunset.
 n You've found a really good spot here.
 
 /

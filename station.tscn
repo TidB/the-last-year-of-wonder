@@ -16,9 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://d0guuy76h27t2" path="res://interactable/take_train.tscn" id="10_dnipj"]
 [ext_resource type="PackedScene" uid="uid://dc76hbc4fx2mk" path="res://assets/warm_lantern.tscn" id="10_rehnx"]
 [ext_resource type="PackedScene" uid="uid://bkr3561cky0b2" path="res://assets/lantern.tscn" id="14_atg86"]
-[ext_resource type="Environment" uid="uid://cohqfhnidtyue" path="res://dusk-env.tres" id="16_dnipj"]
 [ext_resource type="PackedScene" uid="uid://ccu4gq0bnmoj5" path="res://assets/cold_lantern.tscn" id="16_j670d"]
 [ext_resource type="PackedScene" uid="uid://cbfkuecs6ha6" path="res://actors/npc.tscn" id="17_7k7pn"]
+[ext_resource type="Environment" uid="uid://depy0ftad2hk4" path="res://night-env.tres" id="18_iljnl"]
 [ext_resource type="PackedScene" uid="uid://ct1yd2skln8vv" path="res://dialogue/dialogue.tscn" id="18_jl1yo"]
 [ext_resource type="PackedScene" uid="uid://jby7k4ldhbtk" path="res://ui/UI.tscn" id="20_vjagt"]
 
@@ -159,6 +159,30 @@ size = Vector3(20, 100, 65)
 
 [sub_resource type="BoxMesh" id="BoxMesh_6nsqa"]
 size = Vector3(50, 25, 20)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_iljnl"]
+lifetime_randomness = 0.44
+emission_shape = 3
+emission_box_extents = Vector3(200, 1, 200)
+gravity = Vector3(0, 1, 0)
+scale_min = 0.79999995
+scale_max = 1.3
+turbulence_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8dx3"]
+emission_enabled = true
+emission = Color(1, 0.797112, 0.5939754, 1)
+emission_energy_multiplier = 2.0
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_umbhg"]
+material = SubResource("StandardMaterial3D_f8dx3")
+
+[sub_resource type="MultiMesh" id="MultiMesh_f8dx3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_liktj"]
 size = Vector3(40, 70, 30)
@@ -694,9 +718,9 @@ use_collision = true
 size = Vector3(117.757324, 1, 20)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Level3Trainstation" unique_id=288436221]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.9078, -3.8163738, -98.21869)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.9078, -3.8163738, -146.63611)
 use_collision = true
-size = Vector3(228.92444, 1, 336.5598)
+size = Vector3(228.92444, 1, 433.39465)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="Level3Trainstation" unique_id=1771187827]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.90784, -3.8163738, 238.08612)
@@ -1041,11 +1065,27 @@ transform = Transform3D(0.79543114, 0, -0.60604393, 0, 1, 0, 0.60604393, 0, 0.79
 size = Vector3(50, 16, 20)
 
 [node name="building20" type="CSGBox3D" parent="outside" unique_id=1376148108]
-transform = Transform3D(0.79543114, 0, -0.60604393, 0, 1, 0, 0.60604393, 0, 0.79543114, -88.11716, 6.470394, 165.79996)
-size = Vector3(45.56, 20, 20)
+transform = Transform3D(0.79543114, 0, -0.60604393, 0, 1, 0, 0.60604393, 0, 0.79543114, -79.936714, 6.470394, 172.03268)
+size = Vector3(24.991426, 20, 20)
 
 [node name="building30" type="CSGBox3D" parent="outside" unique_id=436641676]
 transform = Transform3D(0.79543114, 0, -0.60604393, 0, 1, 0, 0.60604393, 0, 0.79543114, -28.062744, 6.470394, 211.42209)
+size = Vector3(45.56, 20, 20)
+
+[node name="building47" type="CSGBox3D" parent="outside" unique_id=1181378802]
+transform = Transform3D(0.01075092, 0, -0.9999423, 0, 1, 0, 0.9999423, 0, 0.01075092, -85.31695, 4.591076, 217.08017)
+size = Vector3(50, 16, 20)
+
+[node name="building48" type="CSGBox3D" parent="outside" unique_id=1616513490]
+transform = Transform3D(0.01075092, 0, -0.9999423, 0, 1, 0, 0.9999423, 0, 0.01075092, -84.31032, 4.591076, 319.58127)
+size = Vector3(74.36902, 16, 20)
+
+[node name="building49" type="CSGBox3D" parent="outside" unique_id=1413371457]
+transform = Transform3D(0.01075092, 0, -0.9999423, 0, 1, 0, 0.9999423, 0, 0.01075092, -85.71469, 6.470394, 180.08469)
+size = Vector3(24.991426, 20, 20)
+
+[node name="building50" type="CSGBox3D" parent="outside" unique_id=1437162525]
+transform = Transform3D(0.01075092, 0, -0.9999423, 0, 1, 0, 0.9999423, 0, 0.01075092, -84.9081, 6.470394, 263.64166)
 size = Vector3(45.56, 20, 20)
 
 [node name="building6" type="CSGBox3D" parent="outside" unique_id=1568310901]
@@ -1123,6 +1163,10 @@ size = Vector3(130, 16, 20)
 [node name="building31" type="CSGBox3D" parent="outside" unique_id=1449100895]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.064884, 4.591076, 301.2147)
 size = Vector3(130, 16, 20)
+
+[node name="building46" type="CSGBox3D" parent="outside" unique_id=95300693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.61576, 4.591076, 357.2559)
+size = Vector3(114.365234, 16, 20)
 
 [node name="lanterns" type="Node3D" parent="outside" unique_id=89243147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.0865402, -15.181717)
@@ -1293,9 +1337,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.361786, 1.9205704, -14.315
 [node name="Firework" parent="." unique_id=1091554719 instance=ExtResource("10_bmuap")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 30.529543, 74.991234, 254.70213)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=93344638]
-environment = ExtResource("16_dnipj")
-
 [node name="outside_inaccessible" type="Node3D" parent="." unique_id=1212894370]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="outside_inaccessible" unique_id=860593752]
@@ -1463,9 +1504,32 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -301
 size = Vector3(89.908905, 31.177734, 20)
 
 [node name="CSGBox3D10" type="CSGBox3D" parent="outside_inaccessible" unique_id=1735077943]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -291.7072, 29.502153, 3.492897)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -283.4997, 29.02965, 3.4928963)
 use_collision = true
-size = Vector3(300, 1, 500)
+size = Vector3(316.41504, 1, 500)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="outside_inaccessible" unique_id=1189101921]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -274.31732, 29.02965, 501.1188)
+use_collision = true
+size = Vector3(334.7798, 1, 500)
+
+[node name="Movement" type="GPUParticles3D" parent="outside_inaccessible/CSGBox3D11" unique_id=1565401310]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 0, 4.825903, 0)
+visible = false
+amount = 500
+lifetime = 5.0
+preprocess = 5.0
+process_material = SubResource("ParticleProcessMaterial_iljnl")
+draw_pass_1 = SubResource("QuadMesh_umbhg")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="outside_inaccessible" unique_id=297012814]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 133.64694, 28.731386, 590.0565)
+use_collision = true
+size = Vector3(334.7798, 1, 500)
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="outside_inaccessible/CSGBox3D12" unique_id=1154959735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.067518, 0)
+multimesh = SubResource("MultiMesh_f8dx3")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="outside_inaccessible" unique_id=1522136433]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -243.19786, 64.458466, 78.45886)
@@ -1555,6 +1619,9 @@ mesh = SubResource("BoxMesh_atg86")
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 323.3201, 53.606575, 89.66323)
 mesh = SubResource("BoxMesh_trh1i")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=93344638]
+environment = ExtResource("18_iljnl")
+
 [node name="Dialogue" parent="." unique_id=1113950919 instance=ExtResource("18_jl1yo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.48738, 37.851482, 10.656864)
 dialogue_name = "0_intro/greeting"
@@ -1569,6 +1636,7 @@ dialogue_name = "0_intro/use_tutorial"
 
 [node name="UI" parent="." unique_id=899202444 instance=ExtResource("20_vjagt")]
 unique_name_in_owner = true
+visible = true
 
 [node name="Dialogue2" parent="." unique_id=9560499 instance=ExtResource("18_jl1yo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.05043, 37.55307, 8.823084)
