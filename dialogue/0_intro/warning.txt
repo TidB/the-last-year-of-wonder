@@ -8,3 +8,6 @@ n I'll have to start all over again!
 n Let's cut to the chase; you can see that I have taken the wrong train.
 n How else could I have ended up in this dark station!?
 n At least there's only one option here.
+n I choose... to take this train!
+n But no, maybe not. I can wait.
+n What if the only option carries me in the wrong direction?

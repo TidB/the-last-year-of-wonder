@@ -1,0 +1,19 @@
+/
+1 Didn't you want to pick up drumming?
+2 Yeah, but a new hobby feels like a waste of time.
+2 Don't have the patience to start anew when I can do other things so much better.
+1 But this beat is awesome!
+1 You can't stop nodding along!
+2 Makes it worse.
+2 I don't think it's jealousy, more like...
+2 Why even try? I'll never be as good
+1 You know that's not true. Or at least not a problem.
+2 But it feels true.
+2 Every time I start something new, I get this sinking feeling of it all being futile
+1 What about that story you wrote some years ago?
+2 I was happy
+2 But, that made all my previous efforts seem worthless
+2 And I feel I can't improve
+1 You should write something new
+1 Right once you get back home
+2 Right

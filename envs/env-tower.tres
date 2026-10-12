@@ -1,0 +1,29 @@
+[gd_resource type="Environment" format=3 uid="uid://oeq60yt28ffq"]
+
+[ext_resource type="Material" uid="uid://drktd5o7a8ks5" path="res://envs/night.tres" id="1_qgi7t"]
+
+[sub_resource type="Sky" id="Sky_7imi8"]
+sky_material = ExtResource("1_qgi7t")
+
+[resource]
+background_mode = 1
+background_color = Color(0.020790007, 0.018199999, 0.07, 1)
+sky = SubResource("Sky_7imi8")
+ambient_light_source = 2
+ambient_light_color = Color(0.0703125, 0.0703125, 0.0703125, 1)
+tonemap_mode = 2
+glow_enabled = true
+glow_levels/1 = 0.5
+glow_levels/2 = 0.5
+glow_levels/4 = 0.3
+glow_levels/5 = 0.5
+glow_levels/6 = 0.5
+glow_levels/7 = 0.5
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_sky_affect = 0.0
+fog_height = 100.0
+fog_height_density = -0.002
+fog_depth_begin = 5000.0
+fog_depth_end = 5000.0

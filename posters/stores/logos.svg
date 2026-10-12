@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="177.57219"
-     inkscape:cy="370.43557"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="309.00567"
+     inkscape:cy="308.12178"
      inkscape:window-width="3840"
      inkscape:window-height="2089"
      inkscape:window-x="1912"
@@ -323,9 +323,9 @@
        style="font-size:32px;line-height:1.25;font-family:Brassia;-inkscape-font-specification:'Brassia, @opsz=32,wght=800';font-variant-ligatures:none;font-variation-settings:'opsz' 32, 'wght' 800;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect21);display:inline;fill:#000000;fill-opacity:1"><tspan
          x="330"
          y="389.6"
-         id="tspan35"><tspan
-           style="font-size:26.6667px;font-family:'Nyght Serif';-inkscape-font-specification:'Nyght Serif, Normal'"
-           id="tspan29">Croissansky</tspan></tspan></text><g
+         id="tspan2"><tspan
+           style="font-style:italic;font-weight:500;font-size:26.6667px;font-family:'Nyght Serif';-inkscape-font-specification:'Nyght Serif, Medium Italic'"
+           id="tspan1">Croissansky</tspan></tspan></text><g
        id="g1"><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,8.38743,-1.3132708)"
@@ -333,9 +333,9 @@
          style="font-size:40px;line-height:1.25;font-family:'Ostrich Sans';-inkscape-font-specification:'Ostrich Sans, Normal';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1);display:inline"><tspan
            x="47.53125"
            y="79.703125"
-           id="tspan38"><tspan
+           id="tspan4"><tspan
              style="font-size:26.6667px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal'"
-             id="tspan37">Modern Press</tspan></tspan></text><rect
+             id="tspan3">Modern Press</tspan></tspan></text><rect
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.165;stroke-linejoin:bevel"
          id="rect2"
          width="0.79374951"
@@ -363,7 +363,7 @@
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect22);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan39">Presse + Buch</tspan></text></g><g
+           id="tspan5">Presse + Buch</tspan></text></g><g
        id="g2"><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,0.22049222,1.1376963)"
@@ -371,16 +371,16 @@
          style="font-weight:bold;font-size:26.6667px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Bold';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect10);display:inline;fill:#00cf4e;fill-opacity:1;stroke:#ffd947;stroke-opacity:1"><tspan
            x="309"
            y="69.666698"
-           id="tspan41"><tspan
+           id="tspan7"><tspan
              style="font-weight:normal;font-family:Manosque;-inkscape-font-specification:'Manosque, Normal'"
-             id="tspan40">Snack Station</tspan></tspan></text><text
+             id="tspan6">Snack Station</tspan></tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,79.645819,4.7253955)"
          id="text23"
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect23);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan42">Yorma's</tspan></text></g><g
+           id="tspan8">Yorma's</tspan></text></g><g
        id="g3"><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,0.05380539,2.6743369)"
@@ -390,15 +390,15 @@
          y="0"><tspan
            x="89.516598"
            y="139.68391"
-           id="tspan44"><tspan
+           id="tspan10"><tspan
              style="font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable, @opsz=32,wght=900';font-variation-settings:'opsz' 32, 'wght' 900"
-             id="tspan43">CHICKEN
+             id="tspan9">CHICKEN
 </tspan></tspan><tspan
            x="116.94502"
            y="165.68104"
-           id="tspan46"><tspan
+           id="tspan12"><tspan
              style="font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable, @opsz=32,wght=900';font-variation-settings:'opsz' 32, 'wght' 900"
-             id="tspan45">HELL
+             id="tspan11">HELL
 </tspan></tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,24.405414,24.514018)"
@@ -406,7 +406,7 @@
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect24);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan47">KFC</tspan></text></g><g
+           id="tspan13">KFC</tspan></text></g><g
        id="g4"><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,0.05380539,2.6743369)"
@@ -414,9 +414,9 @@
          style="font-weight:bold;font-size:26.6667px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Bold';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect11);display:inline;fill:#f13030;fill-opacity:1"><tspan
            x="302.64062"
            y="144.68535"
-           id="tspan49"><tspan
+           id="tspan15"><tspan
              style="font-weight:normal;font-family:'Momo Signature';-inkscape-font-specification:'Momo Signature, Normal'"
-             id="tspan48">Laenba</tspan></tspan></text><path
+             id="tspan14">Laenba</tspan></tspan></text><path
          style="fill:none;fill-opacity:1;stroke:#f13030;stroke-width:0.565;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
          d="m 79.375002,39.6875 h 33.560588 a 0.16085167,0.16085167 79.099292 0 1 0.0597,0.310199 l -5.1021,2.040841 a 0.152863,0.152863 79.099292 0 0 0.0568,0.294793 l 2.80083,0 a 0.0993674,0.0993674 75.127553 0 1 0.0493,0.185642 l -1.52721,0.87269"
          id="path11"
@@ -430,7 +430,7 @@
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect25);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan50">Ditsch</tspan></text></g><g
+           id="tspan16">Ditsch</tspan></text></g><g
        id="g6"
        transform="translate(0,-2.6458339)"><circle
          style="fill:#ff3330;fill-opacity:1;stroke:none;stroke-width:0.867944;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
@@ -464,16 +464,16 @@
          transform="matrix(0.26458333,0,0,0.26458333,64.241606,15.133113)"><tspan
            x="75"
            y="224.6667"
-           id="tspan52"><tspan
+           id="tspan18"><tspan
              style="font-family:Junicode;-inkscape-font-specification:'Junicode, Normal'"
-             id="tspan51">Schlehdorn</tspan></tspan></text><text
+             id="tspan17">Schlehdorn</tspan></tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,81.328738,50.788032)"
          id="text26"
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect26);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan53">Kamps</tspan></text></g><g
+           id="tspan19">Kamps</tspan></text></g><g
        id="g5"
        transform="translate(0,-2.6458339)"><rect
          style="display:inline;fill:#2898ff;fill-opacity:1;stroke:#ffffff;stroke-width:0.00499999;stroke-linecap:round;stroke-linejoin:bevel"
@@ -489,18 +489,18 @@
          style="font-size:26.6667px;line-height:1.25;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable, @opsz=32,wght=900';font-variant-ligatures:none;font-variation-settings:'opsz' 32, 'wght' 900;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect14);display:inline;fill:#2898ff;fill-opacity:1"><tspan
            x="80"
            y="234.68392"
-           id="tspan56"><tspan
+           id="tspan22"><tspan
              style="font-family:Canarina;-inkscape-font-specification:'Canarina, Normal'"
-             id="tspan54">Fast &amp;  </tspan><tspan
+             id="tspan20">Fast &amp;  </tspan><tspan
              style="font-family:Canarina;-inkscape-font-specification:'Canarina, Normal';fill:#ffffff"
-             id="tspan55">Tasty</tspan></tspan></text><text
+             id="tspan21">Tasty</tspan></tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,23.483877,54.9411)"
          id="text27"
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect27);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan57">HBB Bistro</tspan></text></g><g
+           id="tspan23">HBB Bistro</tspan></text></g><g
        id="g8"
        transform="translate(0,-2.6458339)"><text
          xml:space="preserve"
@@ -509,20 +509,20 @@
          style="font-size:26.6667px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect17);display:inline"><tspan
            x="100"
            y="314.68392"
-           id="tspan61"><tspan
+           id="tspan27"><tspan
              style="font-weight:bold;font-family:'Bluu Next';-inkscape-font-specification:'Bluu Next, Bold'"
-             id="tspan58">Asia </tspan><tspan
+             id="tspan24">Asia </tspan><tspan
              style="font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable, @opsz=32';font-variation-settings:'opsz' 32"
-             id="tspan59">@</tspan><tspan
+             id="tspan25">@</tspan><tspan
              style="font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable, @opsz=32,wght=500';font-variation-settings:'opsz' 32, 'wght' 500"
-             id="tspan60"> home</tspan></tspan></text><text
+             id="tspan26"> home</tspan></tspan></text><text
          xml:space="preserve"
          transform="matrix(0.26458333,0,0,0.26458333,23.135731,78.899236)"
          id="text28"
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect28);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan62">asia hung</tspan></text></g><g
+           id="tspan28">asia hung</tspan></text></g><g
        id="g7"
        transform="translate(0,-2.6458339)"><text
          xml:space="preserve"
@@ -531,9 +531,9 @@
          style="font-size:26.6667px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans, Normal';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect18);display:inline"><tspan
            x="320"
            y="334.62066"
-           id="tspan64"><tspan
+           id="tspan30"><tspan
              style="font-weight:bold;font-size:32px;font-family:'Inter Variable';-inkscape-font-specification:'Inter Variable Bold'"
-             id="tspan63">INFO</tspan></tspan></text><rect
+             id="tspan29">INFO</tspan></tspan></text><rect
          style="display:inline;fill:#e41c1c;fill-opacity:1;stroke:none;stroke-width:0.357206;stroke-dasharray:none;stroke-opacity:1"
          id="rect203"
          width="27.781254"
@@ -660,28 +660,28 @@
          style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect29);display:inline"><tspan
            x="47.199219"
            y="22.010029"
-           id="tspan65">Reisezentrum</tspan></text></g><text
+           id="tspan31">Reisezentrum</tspan></text></g><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,22.332984,93.39526)"
        id="text30"
        style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect30);display:inline"><tspan
          x="47.199219"
          y="22.010029"
-         id="tspan66">BlumenMeer</tspan></text><text
+         id="tspan32">BlumenMeer</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,79.121992,100.12103)"
        id="text31"
        style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect31);display:inline"><tspan
          x="47.199219"
          y="22.010029"
-         id="tspan67">Le Crobag</tspan></text><text
+         id="tspan33">Le Crobag</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,23.809441,119.81915)"
        id="text32"
        style="font-size:13.3333px;line-height:1.25;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans';font-variant-ligatures:none;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect32);display:inline"><tspan
          x="47.199219"
          y="22.010029"
-         id="tspan68">Backwerk</tspan></text><g
+         id="tspan34">Backwerk</tspan></text><g
        style="fill:#654700;fill-opacity:1"
        id="g19"
        transform="matrix(0.27128135,-0.0789863,0.0789863,0.27128135,27.84598,133.01516)"><path
@@ -696,15 +696,15 @@
        y="0"><tspan
          x="142.02531"
          y="521.45836"
-         id="tspan70"><tspan
+         id="tspan36"><tspan
            style="font-family:Piscolabis;-inkscape-font-specification:'Piscolabis, Normal'"
-           id="tspan69">Bread
+           id="tspan35">Bread
 </tspan></tspan><tspan
          x="133.65542"
          y="548.12505"
-         id="tspan72"><tspan
+         id="tspan38"><tspan
            style="font-family:Piscolabis;-inkscape-font-specification:'Piscolabis, Normal'"
-           id="tspan71">Basket
+           id="tspan37">Basket
 </tspan></tspan></text><circle
        style="fill:#ff2e2e;fill-opacity:1;stroke-width:1.08;stroke-linecap:round;stroke-linejoin:bevel"
        id="path2"

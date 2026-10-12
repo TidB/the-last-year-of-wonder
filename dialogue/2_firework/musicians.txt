@@ -1,0 +1,15 @@
+/
+1 They're still here? Man, the band's been blocking this exit since forever!
+1 Not that they're bad -
+2 Don't throw stones in a glass house
+1 - but it's so arrogant.
+3 Maybe the exit was blocked first and the band just seized the opportunity?
+1 With the state of this station, I can believe that.
+
+/
+2 That reminds me, didn't we want to start a jam session?
+2 I recently saw that old steel mill in the news again, how crazy would that be!
+1 What, you remembered!
+1 Yeah let's do it. Dunno how many people will be interested though.
+2 Or if they're good...
+1 We don't have to worry about that for the first session, I think it'll just be us two.
